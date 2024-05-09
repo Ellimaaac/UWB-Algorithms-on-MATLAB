@@ -7,7 +7,8 @@ Some papers interesting and not it depends on what you search.
 - [Evaluating The IEEE 802.15.4a UWB Physical Layer for WSN Applications](doc/WSN_Appli.pdf)
 - [Detection of the LOS/NLOS state change based on the CIR features]()
 - [NOISE: Radio Channel Impulse Response Measurement and Analysis]()
-
+- [Impulsive noise in UWB systems and its suppression]()
+- [UWB Channel Impulse Responses for Positioning in complex environments]()
 ## DWM1000
 - [Application Note APS006 Part 1.pdf]()
 - [Application Note APS006 Part 2.pdf]()
@@ -19,6 +20,7 @@ Some papers interesting and not it depends on what you search.
 - [DWM3001CDK_SDK_Release_Notes_0.1.1]()
 - [Qovro_7_7_2022_DWM3001CDK_Quick_Start_Guide-2998998]()
 - [UWB-Stack-R11.9.2]()
+- [Indoor UWB Positioning and Position Tracking Data Set]()
 ## On Matlab :
 
 ### Description :
