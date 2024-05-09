@@ -1,5 +1,5 @@
 # UWB-Algorithms-on-MATLAB
-Stage S8
+Internship of 
 # Informations
 ## Papers
 Some papers interesting and not it depends on what you search.
@@ -31,7 +31,7 @@ Some papers interesting and not it depends on what you search.
 
 # 1. UWB 802.15.4 toolbox Matlab
 Pretty big prog which does a lot of things !
-I tried to synthetise all prog that matlab gives and more so dont be affraid off the shit structure and commentary. Take in account that i try over method and new so there is a lot of thinks commented. Sorry. And good luck. There some screenshot of my results, in the case who you don't want to download and open it.
+I tried to synthetise all prog that matlab gives and more !
 
 **PS : if i have the time i will clean it**
 
