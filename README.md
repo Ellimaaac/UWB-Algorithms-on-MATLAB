@@ -1,5 +1,5 @@
 # UWB-Algorithms-on-MATLAB
-Internship of 
+Internship in 
 # Informations
 ## Papers
 Some papers interesting and not it depends on what you search.
@@ -45,8 +45,8 @@ So, i will try to detail it !
 ### 2.  Two Way Ranging / Time Difference On Arrival
  not stat 
  
-**PS : if i have the time i will clean it**
 
 # 2. UWB development boards on DWM3000 and SEGGER Embedded Studio for ARM 7.30
-Environnement like STM32CubeIDE but the Demo of the prog and the doc is a piece of shit (sorry about my vocabulary).
-Maybe i would try something
+maybe one day
+
+
