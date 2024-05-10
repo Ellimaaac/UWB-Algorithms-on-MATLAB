@@ -34,7 +34,17 @@ Some papers interesting and not it depends on what you search.
 # 1. UWB 802.15.4 toolbox Matlab
 Pretty big prog which does a lot of things !
 I tried to synthetise all prog that matlab gives and more !
+So, i will try to detail it !
+### 1.  One Way Ranging / Time Difference On Arrival
+- Firstly, you put in input all your devices and nodes. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
+- Then you will put your data file for configure the MAC and PHY layers
+- Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : the distance, the time of flight, the Time Difference On Arrival (TDOA). It takes in account the noise and preamble (but you need to configure it).
+- After that, you will be able to see the TDOA based on hyperbolics intersection of pairs of nodes **for each initiators (devices)**. It takes 3 pairs of nodes (receptors) based on 3 nodes that you can choose and modify
+- Finaly, the program will caculates the distance errors difference between the device position and the hyperbolics intersection.
 
+### 2.  Two Way Ranging / Time Difference On Arrival
+ not stat 
+ 
 **PS : if i have the time i will clean it**
 
 # 2. UWB development boards on DWM3000 and SEGGER Embedded Studio for ARM 7.30
