@@ -90,10 +90,10 @@ maybe one day
 # 3. References
 ## Papers
 Some papers interesting and not it depends on what you search.
-- [Detection of the LOS/NLOS state change based on the CIR features](doc/Detection-of-the-LOS/NLOS-state-change-based-on-the-CIR-features.pdf)
-- [NOISE: Radio Channel Impulse Response Measurement and Analysis](doc/Radio Channel Impulse Response Measurement and Analysis.pdf)
-- [Impulsive noise in UWB systems and its suppression]()
-- [UWB Channel Impulse Responses for Positioning in complex environments]()
+- [Detection of the LOS/NLOS state change based on the CIR features](doc/Detection_of_the_LOS/NLOS_state_change_based_on_the_CIR_features.pdf)
+- [NOISE: Radio Channel Impulse Response Measurement and Analysis](doc/Radio_Channel_Impulse_Response_Measurement_and_Analysis.pdf)
+- [Impulsive noise in UWB systems and its suppression](doc/Impulsive_noise_in_UWB_systems_and_its_suppression)
+- [UWB Channel Impulse Responses for Positioning in complex environments](doc/UWB_Channel_Impulse_Responses_for_Positioning_in_complex_environments)
 ## DWM1000
 - [Application Note APS006 Part 1](doc/Application_Note_APS006_Part_1.pdf)
 - [Application Note APS006 Part 2](doc/Application_Note_APS006_Part_2.pdf)
