@@ -35,7 +35,7 @@ I tried to synthetise all prog that matlab gives and more !
 So, i will try to detail it !
 ### 1.  One Way Ranging / Time Difference On Arrival
 This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://fr.mathworks.com/help/comm/ug/uwb-localization-using-ieee-802.15.4z.html) program gives by matlab.
-- Firstly, you put in input all your devices and nodes. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
+- Firstly, you put in input **all your devices and nodes**. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
 ```matlab
 numDevices = 2;
 numNodes = 6;
@@ -53,7 +53,7 @@ nodeLoc = [40 41;
 <p align="center"><img src="img/distance.png"></p>
 
 - Then you will put your data file for configure the MAC and PHY layers
-- Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : the distance, the time of flight and mostly the Time Difference On Arrival (TDOA). It takes in account the noise and preamble (but you need to configure it).
+- Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : **the distance**, **the time of flight** and mostly **the Time Difference On Arrival (TDOA)**. It takes in account the noise and preamble (but you need to configure it).
 <p align="center"><img src="img/hyperbolic intersection.png"</p>
 <p align="center"><img src="img/hyperbolic intersection2.png"</p>
 
@@ -66,7 +66,7 @@ nodePairs = [1, 2;
 numPairs = size(nodePairs, 1);
 
 ```
-- Finaly, the program will caculates the distance errors difference between the device position and the hyperbolics intersection.
+- Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection.
 
 ### 2.  Two Way Ranging / Time Difference On Arrival
 In this program i will fous myself not only in the two way ranging part but in the types of communications : LOS (Line of Sight) and N-LOS(Non Line of Sight). In an industrial environment, the are a lot of obstructions between the anchors and the tags. 
