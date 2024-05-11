@@ -69,8 +69,7 @@ numPairs = size(nodePairs, 1);
 - Finaly, the program will caculates the distance errors difference between the device position and the hyperbolics intersection.
 
 ### 2.  Two Way Ranging / Time Difference On Arrival
- not start 
- 
+W.I.P
 
 # 2. UWB development boards on DWM3000 and SEGGER Embedded Studio for ARM 7.30
 maybe one day
