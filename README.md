@@ -36,6 +36,7 @@ Pretty big prog which does a lot of things !
 I tried to synthetise all prog that matlab gives and more !
 So, i will try to detail it !
 ### 1.  One Way Ranging / Time Difference On Arrival
+This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://fr.mathworks.com/help/comm/ug/uwb-localization-using-ieee-802.15.4z.html) program gives by matlab.
 - Firstly, you put in input all your devices and nodes. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
 - Then you will put your data file for configure the MAC and PHY layers
 - Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : the distance, the time of flight, the Time Difference On Arrival (TDOA). It takes in account the noise and preamble (but you need to configure it).
