@@ -60,11 +60,18 @@ nodeLoc = [40 41;
 <p align="center"><img src="img/hyperbolic intersection2.png"</p>
 
 - After that, you will be able to see the TDOA based on hyperbolics intersection of pairs of nodes **for each initiators (devices)**. It takes 3 pairs of nodes (receptors) based on 3 nodes that you can choose and modify
+```matlab
+nodePairs = [1, 2; 
+             1, 3; 
+             2, 3];
 
+numPairs = size(nodePairs, 1);
+
+```
 - Finaly, the program will caculates the distance errors difference between the device position and the hyperbolics intersection.
 
 ### 2.  Two Way Ranging / Time Difference On Arrival
- not stat 
+ not start 
  
 
 # 2. UWB development boards on DWM3000 and SEGGER Embedded Studio for ARM 7.30
