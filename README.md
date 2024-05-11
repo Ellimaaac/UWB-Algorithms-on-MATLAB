@@ -5,8 +5,8 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
 Some papers interesting and not it depends on what you search.
 
 - [Evaluating The IEEE 802.15.4a UWB Physical Layer for WSN Applications](doc/WSN_Appli.pdf)
-- [Detection of the LOS/NLOS state change based on the CIR features]()
-- [NOISE: Radio Channel Impulse Response Measurement and Analysis]()
+- [Detection of the LOS/NLOS state change based on the CIR features](doc/Detection of the LOS/NLOS state change based on the CIR features)
+- [NOISE: Radio Channel Impulse Response Measurement and Analysis](doc/Radio Channel Impulse Response Measurement and Analysis)
 - [Impulsive noise in UWB systems and its suppression]()
 - [UWB Channel Impulse Responses for Positioning in complex environments]()
 ## DWM1000
