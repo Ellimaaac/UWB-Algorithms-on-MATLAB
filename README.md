@@ -65,19 +65,19 @@ nodeLoc = [40 41;
 <p align="center"><img src="img/hyperbolic intersection2.png"</p>
 
 - After that, you will be able to see the TDOA based on hyperbolics intersection of pairs of nodes **for each initiators (devices)**. It takes 3 pairs of nodes (receptors) based on 3 nodes that you can choose and modify
+  
 ```matlab
 nodePairs = [1, 2; 
              1, 3; 
              2, 3];
 
 numPairs = size(nodePairs, 1);
-
 ```
 - Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
 <p align="center"><img src="img/hyperbolicIntersectionError.png" width="500"></p>
 
 
-### 2.  Two Way Ranging / Time Difference On Arrival
+### 2. Two Way Ranging / Time Difference On Arrival
 In this program i will fous myself not only in the two way ranging part but in the types of communications : LOS (Line of Sight) and N-LOS(Non Line of Sight). In an industrial environment, the are a lot of obstructions between the anchors and the tags. 
 
 You will be able to switch between this two methods.
