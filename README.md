@@ -69,7 +69,11 @@ numPairs = size(nodePairs, 1);
 - Finaly, the program will caculates the distance errors difference between the device position and the hyperbolics intersection.
 
 ### 2.  Two Way Ranging / Time Difference On Arrival
-W.I.P
+In this program i will fous myself not only in the two way ranging part but in the types of communications : LOS (Line of Sight) and N-LOS(Non Line of Sight). In an industrial environment, the are a lot of obstructions between the anchors and the tags. 
+
+You will be able to switch between this two methods.
+
+**W.I.P**
 
 # 2. UWB development boards on DWM3000 and SEGGER Embedded Studio for ARM 7.30
 maybe one day
