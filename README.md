@@ -50,7 +50,7 @@ You will be able to switch between this two methods.
 # 2. UWB development boards on DWM3000 and SEGGER Embedded Studio for ARM 7.30
 maybe one day
 
-# References
+# 3. References
 ## Papers
 Some papers interesting and not it depends on what you search.
 - [Detection of the LOS/NLOS state change based on the CIR features](doc/Detection-of-the-LOS/NLOS-state-change-based-on-the-CIR-features.pdf)
