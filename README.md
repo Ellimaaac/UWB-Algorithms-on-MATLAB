@@ -7,10 +7,6 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
      - [One Way Ranging / Time Difference On Arrival]()
      - [Two Way Ranging / Time Difference On Arrival with LOS & N-LOS]()
 3. [References](#3-References)
-     - [Papers](#papers)
-     - [DWM1000](#dwm1000)
-     - [DWM3000](#dwm3000)
-     - [MATLAB](#for-matlab-)
 
 # 1. Introduction (&Def) to Ultra Wideband (UWB)
 
