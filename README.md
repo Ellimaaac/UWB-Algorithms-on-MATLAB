@@ -2,7 +2,7 @@
 Master 1 Internship at Sapienza University in Ultra wideband in the DIET department.
 
 # Table of Contents
-1. [Introduction & Definition](#1-introduction-&-definition)
+1. [Introduction & Definition](#1-Introduction-to-Ultra-Wideband-(UWB))
 2. [UWB 802.15.4 toolbox Matlab](#2-uwb-802154-toolbox-matlab)
      - [One Way Ranging / Time Difference On Arrival]()
      - [Two Way Ranging / Time Difference On Arrival with LOS & N-LOS]()
@@ -12,7 +12,7 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
      - [DWM3000](#dwm3000)
      - [MATLAB](#MATLAB)
 
-# 1. Introduction to Ultra Wideband (UWB) and Associated Ranging Technologies
+# 1. Introduction to Ultra Wideband (UWB)
 
 Ultra Wideband (UWB) is a wireless communication technology known for transmitting data over a wide frequency band (>500 MHz) using very low energy levels. UWB operates in a frequency range from 3.1 to 10.6 GHz. Due to its high bandwidth, UWB can achieve high data rates and precise location capabilities, making it ideal for a range of applications, including real-time location systems (RTLS), sensor data collection, and secure communications.
 
