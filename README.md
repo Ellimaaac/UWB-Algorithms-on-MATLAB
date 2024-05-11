@@ -52,12 +52,12 @@ nodeLoc = [40 41;
            60 30;
            80 40];
 ```
-<p align="center"><img src="img/distance.png"
+<p align="center"><img src="img/distance.png"></p>
 
 - Then you will put your data file for configure the MAC and PHY layers
 - Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : the distance, the time of flight, the Time Difference On Arrival (TDOA). It takes in account the noise and preamble (but you need to configure it).
-<p align="center"><img src="img/hyperbolic intersection.png"
-<p align="center"><img src="img/hyperbolic intersection2.png"
+<p align="center"><img src="img/hyperbolic intersection.png"</p>
+<p align="center"><img src="img/hyperbolic intersection2.png"</p>
 
 - After that, you will be able to see the TDOA based on hyperbolics intersection of pairs of nodes **for each initiators (devices)**. It takes 3 pairs of nodes (receptors) based on 3 nodes that you can choose and modify
 
