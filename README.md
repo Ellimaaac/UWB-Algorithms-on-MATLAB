@@ -45,7 +45,9 @@ nodePairs = [1, 2;
 numPairs = size(nodePairs, 1);
 
 ```
-- Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection.
+- Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
+<p align="center"><img src="img/hyperbolicIntersectionError.png"></p>
+
 
 ### 2.  Two Way Ranging / Time Difference On Arrival
 In this program i will fous myself not only in the two way ranging part but in the types of communications : LOS (Line of Sight) and N-LOS(Non Line of Sight). In an industrial environment, the are a lot of obstructions between the anchors and the tags. 
