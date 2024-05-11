@@ -46,7 +46,7 @@ numPairs = size(nodePairs, 1);
 
 ```
 - Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
-<p align="center"><img src="img/hyperbolicIntersectionError.png" width="300"></p>
+<p align="center"><img src="img/hyperbolicIntersectionError.png" width="500"></p>
 
 
 ### 2.  Two Way Ranging / Time Difference On Arrival
