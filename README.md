@@ -12,7 +12,7 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
      - [DWM3000](#dwm3000)
      - [MATLAB](#MATLAB)
 
-# 1. Introduction to Ultra Wideband (UWB)
+# 1. Introduction (&Def) to Ultra Wideband (UWB)
 
 Ultra Wideband (UWB) is a wireless communication technology known for transmitting data over a wide frequency band (>500 MHz) using very low energy levels. UWB operates in a frequency range from 3.1 to 10.6 GHz. Due to its high bandwidth, UWB can achieve high data rates and precise location capabilities, making it ideal for a range of applications, including real-time location systems (RTLS), sensor data collection, and secure communications.
 
