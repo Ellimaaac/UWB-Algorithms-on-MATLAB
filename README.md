@@ -9,7 +9,7 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
 3. [References](#3-References)
      - [Papers](#papers)
      - [DWM1000](#dwm1000)
-     - [DW3000](#dwm3000)
+     - [DWM3000](#dwm3000)
      - [MATLAB](#MATLAB)
 
 # 1. Introduction & Definition
