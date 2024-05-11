@@ -53,7 +53,7 @@ nodeLoc = [40 41;
 <p align="center"><img src="img/distance.png"></p>
 
 - Then you will put your data file for configure the MAC and PHY layers
-- Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : the distance, the time of flight, the Time Difference On Arrival (TDOA). It takes in account the noise and preamble (but you need to configure it).
+- Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : the distance, the time of flight and mostly the Time Difference On Arrival (TDOA). It takes in account the noise and preamble (but you need to configure it).
 <p align="center"><img src="img/hyperbolic intersection.png"</p>
 <p align="center"><img src="img/hyperbolic intersection2.png"</p>
 
