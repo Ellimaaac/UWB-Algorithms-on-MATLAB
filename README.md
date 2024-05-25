@@ -2,38 +2,14 @@
 Master 1 Internship at Sapienza University in Ultra wideband in the DIET department.
 
 # Table of Contents
-1. [Introduction & Definition](#1-introduction-def-to-ultra-wideband-uwb)
-2. [UWB 802.15.4 toolbox Matlab](#2-uwb-802154-toolbox-matlab)
+1. [UWB 802.15.4 toolbox Matlab](#1-uwb-802154-toolbox-matlab)
      - [One Way Ranging / Time Difference On Arrival]()
-     - [Two Way Ranging / Time Difference On Arrival with LOS & N-LOS]()
+     - [Time Difference On Arrival with LOS & N-LOS]()
      - [Localization Processing with reel values]
-3. [References](#3-References)
+2. [References](#2-References)
 
-# 1. Introduction (&Def) to Ultra Wideband (UWB)
 
-Ultra Wideband (UWB) is a wireless communication technology known for transmitting data over a wide frequency band (>500 MHz) using very low energy levels. UWB operates in a frequency range from 3.1 to 10.6 GHz. Due to its high bandwidth, UWB can achieve high data rates and precise location capabilities, making it ideal for a range of applications, including real-time location systems (RTLS), sensor data collection, and secure communications.
-
-UWB's precision in determining the position of objects or subjects is enhanced through various ranging techniques, which include one-way ranging, two-way ranging, and methods such as Time of Arrival (ToA), Time Difference of Arrival (TDoA), and Time of Flight (ToF). These methods are fundamental in scenarios requiring high accuracy, such as navigation, tracking systems, and automated industrial processes.
-
-#### One-Way Ranging (OWR)
-One-Way Ranging involves the transmission of a signal from a transmitter to a receiver. The distance between the transmitter and receiver is calculated based on the time it takes for the signal to travel from one to the other, assuming the speed of signal propagation is known. This technique is less commonly used due to its vulnerability to clock synchronization issues between the transmitter and receiver.
-
-#### Two-Way Ranging (TWR)
-Two-Way Ranging improves upon OWR by involving an exchange of signals between two devices. The first device sends a signal, the second device receives it and immediately sends a response back. The round-trip time is then measured and used to calculate the distance. TWR mitigates some synchronization issues seen in OWR as it only requires the initiating device to measure time.
-
-#### Time of Arrival (ToA)
-Time of Arrival is a method used to determine the position of an object by measuring the time it takes for a signal to travel from the object to several receivers. ToA can be used independently or as part of TWR and requires precise time synchronization between the transmitting and receiving devices.
-
-#### Time Difference of Arrival (TDoA)
-Time Difference of Arrival involves measuring the difference in arrival times of a signal to multiple receivers. Unlike ToA, TDoA does not require synchronization of the clocks at the receivers because it relies on the difference in time, not the absolute time of arrival.
-
-#### Time of Flight (ToF)
-Time of Flight is similar to ToA; however, it specifically refers to the measurement of the overall time taken for a signal to travel from a source to a destination. ToF is widely used in various applications, including 3D imaging and simple distance measurement tasks.
-
-#### Line of Sight (LOS) and Non-Line of Sight (NLOS)
-Line of Sight (LOS) refers to a propagation scenario where the transmitter and receiver have a clear, unobstructed path between them. LOS conditions are ideal for most wireless communications as they ensure minimal signal interference and attenuation. Non-Line of Sight (NLOS) conditions occur when there are obstacles or obstructions between the transmitter and receiver, causing reflections, diffraction, and scattering. NLOS scenarios are challenging due to the unpredictability and degradation of the signal, which can adversely affect the accuracy of location-based measurements.
-
-# 2. UWB 802.15.4 toolbox Matlab
+# 1. UWB 802.15.4 toolbox Matlab
 Pretty big prog which does a lot of things !
 I tried to synthetise all prog that matlab gives and more !
 So, i will try to detail it !
