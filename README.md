@@ -8,28 +8,13 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
      - [Localization Processing with reel values]
 2. [References](#2-References)
 
-
 # 1. UWB 802.15.4 toolbox Matlab
 Pretty big prog which does a lot of things !
 I tried to synthetise all prog that matlab gives and more !
 So, i will try to detail it !
 ### 1.  One Way Ranging / Time Difference On Arrival
 This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://fr.mathworks.com/help/comm/ug/uwb-localization-using-ieee-802.15.4z.html) program gives by matlab.
-- Firstly, you put in input **all your devices and nodes**. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
-```matlab
-numDevices = 2;
-numNodes = 6;
-
-deviceLoc = [50 50;
-             25 25]; 
-
-nodeLoc = [40 41;
-           62 83;
-           87 24;
-           40 20;
-           60 30;
-           80 40];
-```
+- Firstly, you put in input **an infinte number of anchors and tags**. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
 <p align="center"><img src="img/distance.png"></p>
 
 - Then you will put your data file for configure the MAC and PHY layers
@@ -39,13 +24,6 @@ nodeLoc = [40 41;
 
 - After that, you will be able to see the TDOA based on hyperbolics intersection of pairs of nodes **for each initiators (devices)**. It takes 3 pairs of nodes (receptors) based on 3 nodes that you can choose and modify
   
-```matlab
-nodePairs = [1, 2; 
-             1, 3; 
-             2, 3];
-
-numPairs = size(nodePairs, 1);
-```
 - Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
 <p align="center"><img src="img/hyperbolicIntersectionError.png" width="500"></p>
 
