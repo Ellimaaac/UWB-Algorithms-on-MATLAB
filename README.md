@@ -3,10 +3,9 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
 
 # Table of Contents
 1. [UWB 802.15.4 toolbox Matlab](#1-uwb-802154-toolbox-matlab)
-     - [One Way Ranging / Time Difference On Arrival]()
-     - [Time Difference On Arrival with LOS & N-LOS]()
      - [Localization Processing with reel values]
-2. [References](#2-References)
+     - [One Way Ranging / Time Difference On Arrival](#One-Way-Ranging-/-Time-Difference-On-Arrival)
+3. [References](#2-References)
 
 # 1. UWB 802.15.4 toolbox Matlab
 Pretty big prog which does a lot of things !
@@ -27,16 +26,6 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 - Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
 <p align="center"><img src="img/hyperbolicIntersectionError.png" width="500"></p>
 
-
-### 2. Two Way Ranging / Time Difference On Arrival
-In this program i will fous myself not only in the two way ranging part but in the types of communications : LOS (Line of Sight) and N-LOS(Non Line of Sight). In an industrial environment, the are a lot of obstructions between the anchors and the tags. 
-
-You will be able to switch between this two methods.
-
-**W.I.P**
-
-# 2. UWB development boards on DWM3000 and SEGGER Embedded Studio for ARM 7.30
-maybe one day
 
 # 3. References
 ## Papers
