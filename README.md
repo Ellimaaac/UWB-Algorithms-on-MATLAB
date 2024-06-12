@@ -3,8 +3,8 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
 
 # Table of Contents
 1. [UWB 802.15.4 toolbox Matlab](#1-uwb-802154-toolbox-matlab)
-     - [Localization Processing with reel values]
-     - [One Way Ranging / Time Difference On Arrival](#One-Way-Ranging-/-Time-Difference-On-Arrival)
+     - [One Way Ranging / Time Difference On Arrival](#1--one-way-ranging--time-difference-on-arrival)
+     - [Post Processing with reel CIR values]
 3. [References](#2-References)
 
 # 1. UWB 802.15.4 toolbox Matlab
