@@ -6,7 +6,7 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
      - [One Way Ranging / Time Difference On Arrival](#1--one-way-ranging--time-difference-on-arrival)
    
 2. [Post Processing with reel CIR values]()
-3. [Theoretical UWB Channel and CIR](#3--Theoretical-UWB-Channel-and-CIR)
+3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
 4. [Data set Creation]()
 5. [References](#2-References)
 
