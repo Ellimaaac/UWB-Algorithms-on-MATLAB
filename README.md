@@ -6,7 +6,7 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
      - [One Way Ranging / Time Difference On Arrival](#1--one-way-ranging--time-difference-on-arrival)
    
 2. [Post Processing with reel CIR values]()
-3. [Theoretical UWB Channel and CIR]()
+3. [Theoretical UWB Channel and CIR](#3--Theoretical-UWB-Channel-and-CIR)
 4. [Data set Creation]()
 5. [References](#2-References)
 
@@ -34,7 +34,7 @@ The goal here is to be able to analyse the channel impulsive response. As there 
 However, they all have a common structure, which I will describe in detail below. 
 
 
-
+# 3. Theoretical UWB Channel and CIR
 
 
 
