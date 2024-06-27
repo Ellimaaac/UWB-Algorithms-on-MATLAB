@@ -8,7 +8,7 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
 2. [Post Processing with reel CIR values]()
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
 4. [Data set Creation]()
-5. [References](#2-References)
+5. [References](#5-References)
 
 # 1. UWB Localization Using IEEE 802.15.4z
 Pretty big prog which does a lot of things !
@@ -53,9 +53,15 @@ However, they all have a common structure, which I will describe in detail below
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models ([link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html))
 Voici une explication détaillée de l'exemple : [.md link](uwb-Channel-Models.md)
+Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique.
+Une fois cela fait, il ne vous restera plus qu'à selectionner le nombre d'itérations pour générer une multitude de CIR et creer votre dataset.
 
 
-# 3. References
+# 4. Dataset creation
+La creation du dataset est basé sur l'index des samples et la magnitude associée. Le code créé un fichier csv contenant : l'index des anchors et tags, le cas LOS ou NLOS (1 ou 0) et la magnitude des samples.
+
+
+# 5. References
 ## Papers
 Some papers interesting and not it depends on what you search.
 - [Detection of the LOS/NLOS state change based on the CIR features](doc/Detection_of_the_LOS_NLOS_state_change_based_on_the_CIR_features.pdf)
