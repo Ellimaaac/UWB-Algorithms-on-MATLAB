@@ -1,5 +1,4 @@
 # UWB-Algorithms-on-MATLAB
-Master 1 Internship at Sapienza University in Ultra wideband in the DIET department.
 
 # Table of Contents
 1. [UWB 802.15.4 toolbox Matlab](#1-uwb-localization-using-ieee-802154z)
