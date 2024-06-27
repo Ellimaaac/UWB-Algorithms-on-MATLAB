@@ -134,10 +134,10 @@ La classe uwbChannelConfig permet de configurer un modèle de canal UWB pour dif
 4.	set.Type et set.HasLOS : Met à jour les paramètres du modèle lorsque le type d'environnement ou la présence d'une LOS sont modifiés.
 5.	isInactiveProperty : Contrôle l'affichage conditionnel des propriétés, déterminant si certaines propriétés doivent être actives ou inactives en fonction des paramètres actuels de l'objet.
  
-Fonction HelpApplyChannel
+# Fonction HelpApplyChannel
 Ce code MATLAB définit une fonction helperApplyChannel qui applique une simulation de canal de type Nakagami pour un signal UWB (Ultra Wide Band). Voici une explication détaillée du fonctionnement de cette fonction :
-Description de la fonction
-Inputs
+## Description de la fonction
+### Inputs
 1.	signalIn : Le signal d'entrée à transmettre à travers le canal UWB.
 2.	clusterArrivalTimes : Les temps d'arrivée des clusters de trajets multiples.
 3.	pathArrivalTimes : Les temps d'arrivée des trajets à l'intérieur des clusters.
@@ -147,10 +147,10 @@ Inputs
 7.	Fs : La fréquence d'échantillonnage.
 8.	sampleDensity : La densité d'échantillons pour la simulation.
 9.	maxDopplerShift : Le décalage Doppler maximal.
-Outputs
+### Outputs
 1.	signalOut : Le signal de sortie après passage par le canal UWB.
 2.	pathGains : Les gains des trajets obtenus par la réalisation de l'évanouissement Nakagami.
-Détails de la fonction
+## Détails de la fonction
 1.	Calcul des temps d'arrivée absolus
 o	La fonction commence par convertir les temps d'arrivée relatifs des trajets en temps absolus, en ajoutant les temps d'arrivée des clusters.
 2.	Création de l'objet de filtre de canal
@@ -161,26 +161,26 @@ o	La fréquence des nouvelles réalisations de canal est calculée à partir du 
 4.	Simulation des gains de trajets
 o	Un tableau pour stocker les gains de trajets (pathGains) est initialisé.
 o	Pour chaque réalisation de canal, les gains de trajets sont calculés en appliquant les distributions de Nakagami et les phases.
-Fonctions associées
+### Fonctions associées
 •	helperUWBFadingRealization : Fonction qui génère une réalisation de l'évanouissement Nakagami.
 •	comm.ChannelFilter : Objet de filtrage de canal pour modéliser les retards de trajets.
 Cette fonction applique un modèle de canal UWB avec évanouissement Nakagami au signal d'entrée en simulant les effets de trajets multiples et de l'évanouissement sur le signal, en prenant en compte les paramètres de fréquence d'échantillonnage et de décalage Doppler.
  
-Fonction helperClusterization
+# Fonction helperClusterization
 Ce code MATLAB définit une fonction helperClusterization qui génère les caractéristiques des clusters pour un modèle de canal Ultra Wide Band (UWB). Voici une explication détaillée de la fonction :
-Description de la fonction
-Inputs
+## Description de la fonction
+### Inputs
 1.	type : Type d'environnement (par exemple, 'Residential', 'Indoor office', 'Industrial').
 2.	LOS : Indicateur booléen de la présence d'une ligne de vue (Line-Of-Sight).
 3.	Lbar : Nombre moyen de clusters.
 4.	Lambda : Taux d'arrivée des clusters suivant un processus de Poisson, en ns^-1.
 5.	sigma_cluster : Écart type de l'ombrage des clusters, en dB.
 6.	Gamma : Constante de décroissance exponentielle de l'énergie des clusters, en ns.
-Outputs
+### Outputs
 1.	L : Nombre de clusters.
 2.	clusterArrivals : Vecteur 1xL contenant les temps d'arrivée des clusters, en ns.
 3.	clusterEnergies : Vecteur 1xL contenant les énergies des clusters.
-Détails de la fonction
+### Détails de la fonction
 1.	Détermination du nombre de clusters
 o	Si l'environnement est de type 'Indoor office' ou 'Industrial' sans LOS, un profil de délai de puissance alternatif est utilisé avec un seul cluster.
 o	Sinon, le nombre de clusters LLL est déterminé par une variable aléatoire de Poisson avec une moyenne LbarLbarLbar.
@@ -215,7 +215,7 @@ if ~singleAlternatePDP
 else
     clusterEnergies = 1;
 end
-Fonction associée
+### Fonction associée
 •	helperPoissonRV : Fonction (non fournie ici) qui génère une variable aléatoire de Poisson.
 Exemple d'utilisation
 Supposons que vous ayez les paramètres suivants pour un environnement 'Residential' avec LOS :
@@ -229,7 +229,7 @@ Cette fonction génère les caractéristiques des clusters, y compris le nombre 
 
 
  
-Fonction helperUWBFadingRealization
+# Fonction helperUWBFadingRealization
 Ce code MATLAB définit une fonction helperUWBFadingRealization qui génère une nouvelle réalisation de l'évanouissement Nakagami pour un canal Ultra Large Bande (UWB). Voici une explication détaillée de cette fonction :
 Description de la fonction
 Inputs
