@@ -24,6 +24,13 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 
 - Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : **the distance**, **the time of flight** and mostly **the Time Difference On Arrival (TDOA)**. It takes in account the noise and preamble (but you need to configure it).
 
+```
+     actualDistances = 3×1    
+        13.4536
+        35.1141
+        45.2217
+```
+
 - After that, you will be able to see the TDOA based on hyperbolics intersection of pairs of nodes **for each initiators (devices)**. It takes 3 pairs of nodes (receptors) based on 3 nodes that you can choose and modify
 <p align="center"><img src="img/2.png"width="400"</p>
 <p align="center"><img src="img/14.png"width="400"</p>
@@ -31,8 +38,6 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 <p align="center"><img src="img/19.png"width="400"</p>
      
 - Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
-<p align="center"><img src="img/hyperbolicIntersectionError.png" width="500"></p>
-
 ```
      Localization error for device 1:
      Localization error #1 = 0.060 m.
