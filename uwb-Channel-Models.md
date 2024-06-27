@@ -1,77 +1,76 @@
-UWB Channel Models
-Introduction
+# Introduction
 Ce code montre comment implémenter des modèles de canal Ultra Large Bande (UWB) pour divers environnements de propagation, en se basant sur les recommandations du sous-groupe de modélisation de canal de la norme IEEE 802.15.4a.
+
+# Table of Contents
+0. [Résumé détaillé]()
+1. [Vue d'ensemble]()
+2. [Structure de la classe uwbChannelConfig]()	
+  3. [Classe uwbChannelConfig]()	
+  4. [Fonction HelpApplyChannel]()	
+  5. [Fonction helperClusterization]()
+  6. [Fonction helperUWBFadingRealization]()	
+  7. [Fonction helperdistancePathLoss]()	
+  8. [Fonction helperFreauencyPathLoss]()	
+  9. [Fonction helperGammaRV]()	
+  10. [Fonction helperNakagamiParameters]()
+  11. [Fonction helperPathModeling]()	
  
-Résumé détaillé du code des modèles de canal UWB
+# Résumé détaillé du code des modèles de canal UWB
 
 Ce code présente l'implémentation de modèles de canal Ultra Large Bande (UWB) basés sur les recommandations du sous-groupe de modélisation de canal de la norme IEEE 802.15.4a. Il permet de simuler des environnements de propagation variés en intégrant des pertes de chemin, des effets d'évanouissement et des caractéristiques spécifiques aux environnements.
--  Configuration des Paramètres de Canal : uwbChannelConfig
-- La classe uwbChannelConfig configure les paramètres nécessaires pour modéliser différents types d'environnements (e.g., bureau intérieur, industriel) avec ou sans ligne de vue (LOS). Elle définit des propriétés telles que le type d'environnement, la perte de chemin de référence, l'exposant de perte de chemin, l'ombrage, et les paramètres d'antenne. Les méthodes de cette classe ajustent les configurations spécifiques selon le type d'environnement et la présence de LOS, permettant de créer des scénarios de propagation personnalisés.
-- Application du Modèle de Canal : helperApplyChannel
-- La fonction helperApplyChannel applique le modèle de canal UWB au signal d'entrée. Elle convertit les temps d'arrivée des chemins en temps absolus, crée un filtre de canal pour modéliser les retards de trajet, et simule les effets d'évanouissement Nakagami. Les gains des trajets sont calculés en fonction des puissances moyennes et des phases des trajets, en prenant en compte les décalages Doppler et la densité d'échantillons.
-- Caractéristiques des Clusters : helperClusterization
+### Configuration des Paramètres de Canal : uwbChannelConfig
+La classe uwbChannelConfig configure les paramètres nécessaires pour modéliser différents types d'environnements (e.g., bureau intérieur, industriel) avec ou sans ligne de vue (LOS). Elle définit des propriétés telles que le type d'environnement, la perte de chemin de référence, l'exposant de perte de chemin, l'ombrage, et les paramètres d'antenne. Les méthodes de cette classe ajustent les configurations spécifiques selon le type d'environnement et la présence de LOS, permettant de créer des scénarios de propagation personnalisés.
+### Application du Modèle de Canal : helperApplyChannel
+La fonction helperApplyChannel applique le modèle de canal UWB au signal d'entrée. Elle convertit les temps d'arrivée des chemins en temps absolus, crée un filtre de canal pour modéliser les retards de trajet, et simule les effets d'évanouissement Nakagami. Les gains des trajets sont calculés en fonction des puissances moyennes et des phases des trajets, en prenant en compte les décalages Doppler et la densité d'échantillons.
+### Caractéristiques des Clusters : helperClusterization
 Cette fonction génère les caractéristiques des clusters pour le modèle de canal UWB. Elle détermine le nombre de clusters, les temps d'arrivée et les énergies des clusters en utilisant des processus de Poisson. Pour certains environnements spécifiques, elle utilise un profil de délai de puissance alternatif avec un seul cluster.
-Réalisation de l'Évanouissement Nakagami : helperUWBFadingRealization
+### Réalisation de l'Évanouissement Nakagami : helperUWBFadingRealization
 La fonction helperUWBFadingRealization génère une nouvelle réalisation de l'évanouissement Nakagami pour chaque trajet. Elle calcule les gains des trajets en utilisant la distribution Gamma et applique les paramètres Nakagami m spécifiques à chaque chemin.
-Perte de Chemin Dépendante de la Distance : helperDistancePathLoss
+### Perte de Chemin Dépendante de la Distance : helperDistancePathLoss
 Cette fonction applique une perte de chemin dépendante de la distance au signal d'entrée. Elle calcule la perte de chemin en fonction de la distance entre l'émetteur et le récepteur, en tenant compte de l'exposant de perte de chemin et de l'ombrage. La perte de chemin est ensuite appliquée au signal d'entrée.
-Perte de Chemin Dépendante de la Fréquence : helperFrequencyPathLoss
+### Perte de Chemin Dépendante de la Fréquence : helperFrequencyPathLoss
 La fonction helperFrequencyPathLoss modélise la perte de chemin en fonction de la fréquence. Elle applique un filtre FIR au signal d'entrée pour ajuster les amplitudes en fonction de la fréquence centrale et de la largeur de bande, en utilisant un exposant spécifique à l'environnement.
-Génération de Variables aléatoires Gamma : helperGammaRV
+### Génération de Variables aléatoires Gamma : helperGammaRV
 Cette fonction génère des variables aléatoires distribuées selon une loi Gamma en utilisant les paramètres de forme et d'échelle. Elle combine des réalisations Gamma pour produire la variable finale.
-Calcul des Paramètres Nakagami : helperNakagamiParameters
+### Calcul des Paramètres Nakagami : helperNakagamiParameters
 La fonction helperNakagamiParameters détermine les paramètres de distribution Nakagami m pour chaque trajet. Elle utilise des distributions log-normales pour calculer les paramètres en fonction des temps d'arrivée des chemins et des caractéristiques spécifiques de l'environnement.
-Modélisation des Chemins : helperPathModeling
+### Modélisation des Chemins : helperPathModeling
 Cette fonction génère les temps d'arrivée, les puissances moyennes et les phases des trajets. Elle utilise des processus de Poisson mixtes pour modéliser les temps d'arrivée et calcule les puissances moyennes en fonction des facteurs de décroissance intra-cluster. Les phases des trajets sont générées uniformément pour représenter les variations complexes du canal.
-Génération de Variables aléatoires de Poisson : helperPoissonRV
+### Génération de Variables aléatoires de Poisson : helperPoissonRV
 La fonction helperPoissonRV génère des variables aléatoires selon une distribution de Poisson en utilisant un algorithme basé sur les sommes logarithmiques. Elle continue d'accumuler des valeurs logarithmiques jusqu'à atteindre le paramètre de la distribution, produisant ainsi une variable de Poisson.
+### Conclusion
 Ce code fournit un cadre complet pour la simulation de canaux UWB, permettant de modéliser précisément les environnements de propagation, les pertes de chemin, et les effets d'évanouissement pour des scénarios variés.
  
-# Table of Contents
-1. Vue d'ensemble	
-2. Structure de la classe uwbChannelConfig	
-3. Classe uwbChannelConfig	
-4. Fonction HelpApplyChannel	
-5. Fonction helperClusterization	
-6. Fonction helperUWBFadingRealization	
-7. Fonction helperdistancePathLoss	
-8. Fonction helperFreauencyPathLoss	
-9. Fonction helperGammaRV	
-10. Fonction helperNakagamiParameters
-11. Fonction helperPathModeling	
 
-
-
- 
 # Vue d'ensemble
 1.	Perte de chemin dépendante de la distance et de la fréquence :
-  o	Le signal reçu subit une perte de chemin, qui dépend de la distance ddd entre l'émetteur et le récepteur, ainsi que de la fréquence fff du signal reçu.
+  - Le signal reçu subit une perte de chemin, qui dépend de la distance ddd entre l'émetteur et le récepteur, ainsi que de la fréquence fff du signal reçu.
 2.	Modèle Saleh-Valenzuela modifié :
-  o	Ce modèle contient des composants multipath (trajets multiples) regroupés en clusters distincts.
+  - Ce modèle contient des composants multipath (trajets multiples) regroupés en clusters distincts.
 3.	Détermination des amplitudes de chemin avec des distributions de Nakagami distinctes (évanouissement à petite échelle) :
-  o	Les amplitudes des chemins sont modélisées en utilisant des distributions de Nakagami spécifiques à chaque environnement.
+  - Les amplitudes des chemins sont modélisées en utilisant des distributions de Nakagami spécifiques à chaque environnement.
 4.	Paramétrage spécifique à l'environnement :
-  o	Les paramètres du modèle sont ajustés en fonction de l'environnement de propagation (ex : bureau intérieur, extérieur, etc.).
+  - Les paramètres du modèle sont ajustés en fonction de l'environnement de propagation (ex : bureau intérieur, extérieur, etc.).
 
-## Paramétrage de l'environnement
+### Paramétrage de l'environnement
 Les modèles de canal UWB recommandés couvrent différentes plages de fréquence (2 à 10 GHz) et types d'environnements, avec ou sans ligne de vue (LOS). L'exemple implémente neuf combinaisons d'environnements.
 Perte de chemin et propagation
 1.	Dépendance de la distance :
-o	La perte de chemin dépend de la distance ddd et est modélisée par un modèle classique de propagation à distance logarithmique. Un facteur d'exponentiation de la perte de chemin (PathLossExponentPathLossExponentPathLossExponent) détermine la rapidité avec laquelle la puissance se dissipe.
+  -	La perte de chemin dépend de la distance ddd et est modélisée par un modèle classique de propagation à distance logarithmique. Un facteur d'exponentiation de la perte de chemin (PathLossExponentPathLossExponentPathLossExponent) détermine la rapidité avec laquelle la puissance se dissipe.
 2.	Dépendance de la fréquence :
-o	La perte de chemin dépend aussi de la fréquence, où les fréquences plus basses sont amplifiées et les plus hautes réduites. Un facteur d'exponentiation de la fréquence (FrequencyExponentFrequencyExponentFrequencyExponent) détermine la rapidité avec laquelle la puissance est perdue en fonction de la fréquence.
-## Effets de l'antenne
+  - La perte de chemin dépend aussi de la fréquence, où les fréquences plus basses sont amplifiées et les plus hautes réduites. Un facteur d'exponentiation de la fréquence (FrequencyExponentFrequencyExponentFrequencyExponent) détermine la rapidité avec laquelle la puissance est perdue en fonction de la fréquence.
+### Effets de l'antenne
 Les effets de l'antenne incluent une atténuation due à la présence de personnes près des antennes et une perte d'antenne spécifique à l'environnement.
-## Profil de délai de puissance (Power Delay Profile)
+### Profil de délai de puissance (Power Delay Profile)
 1.	Clusterisation :
-o	Le modèle de canal UWB basé sur Saleh-Valenzuela groupe les composants multipath en clusters. Les temps d'arrivée des clusters suivent une distribution de Poisson, et l'énergie moyenne de chaque cluster décroit exponentiellement avec le temps d'arrivée.
+-	Le modèle de canal UWB basé sur Saleh-Valenzuela groupe les composants multipath en clusters. Les temps d'arrivée des clusters suivent une distribution de Poisson, et l'énergie moyenne de chaque cluster décroit exponentiellement avec le temps d'arrivée.
 2.	Modélisation des chemins :
-o	Les chemins arrivent au sein de chaque cluster selon un mélange de deux processus de Poisson. La puissance moyenne des chemins décroit exponentiellement en fonction du délai des chemins. Pour certains environnements spécifiques, le profil de délai de puissance augmente jusqu'à un maximum avant de décroitre.
+-	Les chemins arrivent au sein de chaque cluster selon un mélange de deux processus de Poisson. La puissance moyenne des chemins décroit exponentiellement en fonction du délai des chemins. Pour certains environnements spécifiques, le profil de délai de puissance augmente jusqu'à un maximum avant de décroitre.
 3.	Évanouissement à petite échelle (small-scale fading) :
-o	Une distribution de Nakagami est utilisée pour modéliser l'évanouissement à petite échelle, où le paramètre de forme mmm de la distribution de Nakagami est une variable aléatoire log-normale.
-## Simulation
+-	Une distribution de Nakagami est utilisée pour modéliser l'évanouissement à petite échelle, où le paramètre de forme mmm de la distribution de Nakagami est une variable aléatoire log-normale.
+### Simulation
 Les signaux transmis sont affectés par l'évanouissement à petite échelle selon les paramètres de Nakagami et la densité d'échantillons.
-## Comparaison des environnements
+### Comparaison des environnements
 Les gains de canal pour différents environnements peuvent être générés pour illustrer les différences dans leurs profils de délai de puissance. Le uwbChannel encapsule tous les composants du modèle de canal UWB dans une seule utilité pour faciliter la comparaison des environnements.
  
 # Structure de la classe uwbChannelConfig
@@ -128,7 +127,7 @@ La classe uwbChannelConfig permet de configurer un modèle de canal UWB pour dif
 18.	NakagamiMeanOffset et NakagamiMeanSlope : Décalage et pente de la moyenne du facteur Nakagami m.
 19.	NakagamiDeviationOffset et NakagamiDeviationSlope : Décalage et pente de la variance du facteur Nakagami m.
 20.	FirstPathNakagami : Facteur Nakagami m du premier composant fort.
-Méthodes
+## Méthodes
 1.	Constructeur (uwbChannelConfig) : Crée un objet de configuration pour un modèle de canal UWB en fonction du type d'environnement et de la présence d'une LOS.
 2.	updateModelParameters : Met à jour les paramètres du modèle en fonction du type d'environnement et de la présence d'une LOS. 
 3.	setupIndoorOfficeEnvironment et setupIndustrialEnvironment : Configurent les paramètres spécifiques pour les environnements 'Indoor office' et 'Industrial'.
