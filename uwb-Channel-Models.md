@@ -2,7 +2,7 @@
 Ce code montre comment implémenter des modèles de canal Ultra Large Bande (UWB) pour divers environnements de propagation, en se basant sur les recommandations du sous-groupe de modélisation de canal de la norme IEEE 802.15.4a.
 
 # Table of Contents
-0. [Résumé détaillé]()
+0. [Résumé détaillé](#résumé-détaillé-du-code-des-modèles-de-canal-uwb)
 1. [Vue d'ensemble]()
 2. [Structure de la classe uwbChannelConfig]()	
   3. [Classe uwbChannelConfig]()	
