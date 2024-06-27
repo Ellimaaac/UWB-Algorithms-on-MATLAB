@@ -10,7 +10,7 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
 5. [References](#5-References)
 
 # 1. UWB Localization Using IEEE 802.15.4z
-### 1.  One Way Ranging / Time Difference On Arrival
+### One Way Ranging / Time Difference On Arrival
 This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://fr.mathworks.com/help/comm/ug/uwb-localization-using-ieee-802.15.4z.html) program gives by matlab.
 - Firstly, you put in input **an infinte number of anchors and tags**. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
 <p align="center"><img src="img/11 - Copy.png"width="400"></p>
@@ -55,6 +55,7 @@ Une fois cela fait, il ne vous restera plus qu'à selectionner le nombre d'itér
 
 # 4. Dataset creation
 La creation du dataset est basé sur l'index des samples et la magnitude associée. Le code créé un fichier csv contenant : l'index des anchors et tags, le cas LOS ou NLOS (1 ou 0) et la magnitude des samples.
+<p align="center"><img src="img/20.png"width="300"</p>
 
 
 # 5. References
