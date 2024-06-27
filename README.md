@@ -33,6 +33,8 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme.
 However, they all have a common structure, which I will describe in detail below. 
 
+<p align="center"><img src="img/4.png" width="500"></p>
+<p align="center"><img src="img/5.png" width="500"></p>
 
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models ([link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html))
