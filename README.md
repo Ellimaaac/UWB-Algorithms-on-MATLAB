@@ -2,7 +2,7 @@
 Master 1 Internship at Sapienza University in Ultra wideband in the DIET department.
 
 # Table of Contents
-1. [UWB 802.15.4 toolbox Matlab](#1-uwb-802154-toolbox-matlab)
+1. [UWB 802.15.4 toolbox Matlab](#1-uwb-localization-using-ieee-802154z)
      - [One Way Ranging / Time Difference On Arrival](#1--one-way-ranging--time-difference-on-arrival)
    
 2. [Post Processing with reel CIR values]()
@@ -17,15 +17,18 @@ So, i will try to detail it !
 ### 1.  One Way Ranging / Time Difference On Arrival
 This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://fr.mathworks.com/help/comm/ug/uwb-localization-using-ieee-802.15.4z.html) program gives by matlab.
 - Firstly, you put in input **an infinte number of anchors and tags**. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
-<p align="center"><img src="img/distance.png"></p>
+<p align="center"><img src="img/11 - Copy.png"width="400"></p>
 
 - Then you will put your data file for configure the MAC and PHY layers
+<p align="center"><img src="img/12.png"width="400"></p>
+
 - Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : **the distance**, **the time of flight** and mostly **the Time Difference On Arrival (TDOA)**. It takes in account the noise and preamble (but you need to configure it).
-<p align="center"><img src="img/hyperbolic intersection.png"</p>
-<p align="center"><img src="img/hyperbolic intersection2.png"</p>
 
 - After that, you will be able to see the TDOA based on hyperbolics intersection of pairs of nodes **for each initiators (devices)**. It takes 3 pairs of nodes (receptors) based on 3 nodes that you can choose and modify
-  
+<p align="center"><img src="img/2.png"width="400"</p>
+<p align="center"><img src="img/18.png"width="400"</p>
+<p align="center"><img src="img/19.png"width="400"</p>
+     
 - Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
 <p align="center"><img src="img/hyperbolicIntersectionError.png" width="500"></p>
 
@@ -33,8 +36,8 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme.
 However, they all have a common structure, which I will describe in detail below. 
 
-<p align="center"><img src="img/4.png" width="500"></p>
-<p align="center"><img src="img/5.png" width="500"></p>
+<p align="center"><img src="img/4.png" width="400"></p>
+<p align="center"><img src="img/5.png" width="400"></p>
 
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models ([link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html))
