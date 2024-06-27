@@ -33,6 +33,11 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 - Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
 <p align="center"><img src="img/hyperbolicIntersectionError.png" width="500"></p>
 
+```
+     Localization error for device 1:
+     Localization error #1 = 0.060 m.
+```
+
 # 2. Post Processing with reel CIR values
 The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme.
 However, they all have a common structure, which I will describe in detail below. 
