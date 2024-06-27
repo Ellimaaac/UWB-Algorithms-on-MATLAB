@@ -35,8 +35,8 @@ However, they all have a common structure, which I will describe in detail below
 
 
 # 3. Theoretical UWB Channel and CIR
-
-
+Ce code est basé sur l'exemple de la toolbox : uwb Channel Models ([link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html))
+Voici une explication détaillée de l'exemple : 
 
 
 # 3. References
