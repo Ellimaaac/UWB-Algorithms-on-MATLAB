@@ -4,16 +4,12 @@ Master 1 Internship at Sapienza University in Ultra wideband in the DIET departm
 # Table of Contents
 1. [UWB 802.15.4 toolbox Matlab](#1-uwb-localization-using-ieee-802154z)
      - [One Way Ranging / Time Difference On Arrival](#1--one-way-ranging--time-difference-on-arrival)
-   
 2. [Post Processing with reel CIR values]()
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
 4. [Data set Creation]()
 5. [References](#5-References)
 
 # 1. UWB Localization Using IEEE 802.15.4z
-Pretty big prog which does a lot of things !
-I tried to synthetise all prog that matlab gives and more !
-So, i will try to detail it !
 ### 1.  One Way Ranging / Time Difference On Arrival
 This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://fr.mathworks.com/help/comm/ug/uwb-localization-using-ieee-802.15.4z.html) program gives by matlab.
 - Firstly, you put in input **an infinte number of anchors and tags**. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
