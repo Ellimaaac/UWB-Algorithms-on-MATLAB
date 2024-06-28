@@ -40,16 +40,8 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 ```
 
 # 2. Post Processing with real CIR values
-The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme.
-```
-     processingCirDataFromMeasurmentsV1
-     processingCirDataFromMeasurmentsV2
-     processingCirDataFromMeasurmentsV3
-     processingCirDataFromMeasurmentsV4
-     processingCirDataFromMeasurmentsV5
+The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme (5 versions : [Description](processingCirDataFromMeasurmentsVersions.md)).
 
-
-```
 However, they all have a common structure, which I will describe in detail below. 
 
 <p align="center"><img src="img/4.png" width="400"></p>
