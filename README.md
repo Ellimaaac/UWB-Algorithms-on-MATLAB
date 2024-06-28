@@ -56,8 +56,8 @@ La  toolbox utilise l'affichage de l'oscilloscope pour afficher les CIRs.
 
 Pour vérifier les CIRs, j'ai cherché la variable stockant les magnitudes des samples (pour chaque cluster). Cela m'a permis d'obtenir ces graphes et de configurer le dataset.
 
-<p align="center"><img src="img/32.png"width="300"</p>
-<p align="center"><img src="img/30.png"width="300"</p>
+<p align="center"><img src="img/32.png"width="500"</p>
+<p align="center"><img src="img/30.png"width="500"</p>
 
 
 
