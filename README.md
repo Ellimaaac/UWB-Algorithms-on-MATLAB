@@ -33,6 +33,7 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 <p align="center"><img src="img/19.png"width="400"</p>
      
 - Finaly, the program will caculates **the distance errors** difference between the device position and the hyperbolics intersection because as you see the intersection doesn't cross the initiator.
+
 ```
      Localization error for device 1:
      Localization error #1 = 0.060 m.
