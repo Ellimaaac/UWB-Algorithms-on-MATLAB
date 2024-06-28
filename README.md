@@ -3,7 +3,7 @@
 ## Table of Contents
 1. [UWB 802.15.4 toolbox Matlab](#1-uwb-localization-using-ieee-802154z)
      - [One Way Ranging / Time Difference On Arrival](#one-way-ranging--time-difference-on-arrival)
-2. [Post Processing with reel CIR values](#2-post-processing-with-reel-cir-values)
+2. [Post Processing with real CIR values](#2-post-processing-with-reel-cir-values)
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
 4. [Data set Creation](#4-dataset-creation)
 5. [References](#5-References)
@@ -38,7 +38,7 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
      Localization error #1 = 0.060 m.
 ```
 
-# 2. Post Processing with reel CIR values
+# 2. Post Processing with real CIR values
 The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme.
 However, they all have a common structure, which I will describe in detail below. 
 
