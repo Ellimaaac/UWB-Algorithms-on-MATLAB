@@ -49,10 +49,15 @@ However, they all have a common structure, which I will describe in detail below
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models ([matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html))
 Voici une explication détaillée de l'exemple : [uwb-Channel-Models.md link](uwb-Channel-Models.md)
 Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique.
+
+La  toolbox utilise l'affichage de l'oscilloscope pour afficher les CIRs.
 <p align="center"><img src="img/31.png"width="300"</p>
 <p align="center"><img src="img/33.png"width="300"</p>
 
+Pour vérifier les CIRs, j'ai cherché la variable stockant les magnitudes des samples (pour chaque cluster). Cela m'a permis d'obtenir ces graphes et de configurer le dataset.
 
+<p align="center"><img src="img/32.png"width="300"</p>
+<p align="center"><img src="img/33.png"width="300"</p>
 
 
 
@@ -62,7 +67,6 @@ Une fois cela fait, il ne vous restera plus qu'à selectionner le nombre d'itér
 # 4. Dataset creation
 La creation du dataset est basé sur l'index des samples et la magnitude associée. Le code créé un fichier csv contenant : l'index des anchors et tags, le cas LOS ou NLOS (1 ou 0) et la magnitude des samples.
 <p align="center"><img src="img/20.png"width="300"</p>
-
 
 # 5. References
 ## Papers
