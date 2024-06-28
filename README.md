@@ -49,8 +49,8 @@ However, they all have a common structure, which I will describe in detail below
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models ([matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html))
 Voici une explication détaillée de l'exemple : [uwb-Channel-Models.md link](uwb-Channel-Models.md)
 Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique.
-<p align="center"><img src="img/20.png"width="300"</p>
-<p align="center"><img src="img/20.png"width="300"</p>
+<p align="center"><img src="img/31.png"width="300"</p>
+<p align="center"><img src="img/33.png"width="300"</p>
 
 
 
