@@ -60,7 +60,7 @@ Ce code est basé sur l'exemple de la toolbox : uwb Channel Models (*[matlab lin
 Voici une explication détaillée de l'exemple : *[uwb-Channel-Models.md link](uwb-Channel-Models.md)*
 Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique. Pour y parvenir, j'ai du utilisé le sofware et le forum pour certaines informations précise comme la transmition power. Je vous conseille très fortement de vous rendre sur le forum : ***https://forum.qorvo.com/c/wireless-connectivity/ultra-wideband/5***
 
-### UWB Channel Config
+### UWB Channel
 
 ```
   Type              - Environment type ( 'Indoor office', 'Industrial')
@@ -74,12 +74,96 @@ Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle
   SampleDensity     - Number of time samples per half wavelength 
   ChannelFiltering  - Perform channel filtering (logical)
 ```
+### UWB Environments
+function : uwbChannelConfig
+```
+   uwbChannelConfig properties:
 
+   Type                        - Environment type ('Indoor office','Industrial')
+   HasLOS                      - Boolean indicating presence of line-of-sight component
+   ReferencePathLoss           - Path loss (in dB) at 1 m distance
+   PathLossExponent            - Path loss exponent
+   ShadowingDeviation          - Standard deviation of shadowing
+   AntennaLoss                 - Antenna loss
+   FrequencyExponent           - Frequency dependence of path loss
+   AverageNumClusters          - Mean number of clusters
+   ClusterArrivalRate          - Inter-cluster arrival rate
+   PathArrivalRate1            - First (ray) arrival rate for mixed Poisson model
+   PathArrivalRate2            - Second (ray) arrival rate for mixed Poisson model
+   MixtureProbability          - Mixture probability for mixed Poisson model
+   ClusterEnergyDecayConstant  - Inter-cluster exponential decay constant
+   PathDecaySlope              - Slope of intra-cluster exponential decay constant
+   PathDecayOffset             - Offset of intra-cluster exponential decay constant
+   ClusterShadowingDeviation   - Standard deviation of cluster shadowing
+   PDPIncreaseFactor           - Increase rate of alternative power delay profile
+   PDPDecayFactor              - Decay rate of alternative power delay profile (at later times)
+   FirstPathAttenuation        - Attenuation of 1st component in alternative power delay profile
+   NakagamiMeanOffset          - Offset of Nakagami m factor mean
+   NakagamiMeanSlope           - Slope of Nakagami m factor mean
+   NakagamiDeviationOffset     - Offset of Nakagami m factor variance
+   NakagamiDeviationSlope      - Slope of Nakagami m factor variance
+   FirstPathNakagami           - Nakagami m factor of first (strong) component
+```
+```
+Exemple d'environment : 
+  function obj = setupIndoorOfficeEnvironment(obj)
+      if obj.HasLOS
+        obj.ReferencePathLoss           = 35.4;
+        obj.PathLossExponent            = 1.63;
+        obj.ShadowingDeviation          = 1.9;
+        obj.AntennaLoss                 = 3;
+        obj.FrequencyExponent           = 0.03;
+        obj.AverageNumClusters          = 5.4;
+        obj.ClusterArrivalRate          = 0.016;
+        obj.PathArrivalRate1            = 0.19;
+        obj.PathArrivalRate2            = 2.97;
+        obj.MixtureProbability          = 0.0184;
+        obj.ClusterEnergyDecayConstant  = 14.6;
+        obj.PathDecaySlope              = 0;
+        obj.PathDecayOffset             = 6.4;
+        obj.ClusterShadowingDeviation   = nan;
+        obj.PDPIncreaseFactor           = nan;
+        obj.PDPDecayFactor              = nan;
+        obj.FirstPathAttenuation        = nan;
+        obj.NakagamiMeanOffset          = 0.42;
+        obj.NakagamiMeanSlope           = 0;
+        obj.NakagamiDeviationOffset     = 0.31;
+        obj.NakagamiDeviationSlope      = 0;
+        obj.FirstPathNakagami           = nan;
+      else % NLOS
+        obj.ReferencePathLoss           = 57.9;
+        obj.PathLossExponent            = 3.07;
+        obj.ShadowingDeviation          = 3.9;
+        obj.AntennaLoss                 = 3;
+        obj.FrequencyExponent           = 0.71;
+        obj.AverageNumClusters          = 1;
+        obj.ClusterArrivalRate          = nan;
+        obj.PathArrivalRate1            = nan;
+        obj.PathArrivalRate2            = nan;
+        obj.MixtureProbability          = nan;
+        obj.ClusterEnergyDecayConstant  = nan;
+        obj.PathDecaySlope              = nan;
+        obj.PathDecayOffset             = nan;
+        obj.ClusterShadowingDeviation   = nan;
+        obj.PDPIncreaseFactor           = 15.21;
+        obj.PDPDecayFactor              = 11.84;
+        obj.FirstPathAttenuation        = 0.86;
+        obj.NakagamiMeanOffset          = 0.5;
+        obj.NakagamiMeanSlope           = 0;
+        obj.NakagamiDeviationOffset     = 0.25;
+        obj.NakagamiDeviationSlope      = 0;
+        obj.FirstPathNakagami           = nan;
+      end
+    end
+```
 ### Results
 La  toolbox utilise l'affichage de l'oscilloscope pour afficher les CIRs.
 
 <p align="center"><img src="img/31.png"width="400"</p><h3 align="center">LOS</h3>
 <p align="center"><img src="img/33.png"width="400"</p><h3 align="center">NLOS</h3>
+
+Le code d
+
 
 Pour vérifier les CIRs, j'ai cherché la variable stockant les magnitudes des samples (pour chaque cluster). Cela m'a permis d'obtenir ces graphes et de configurer le dataset.
      
