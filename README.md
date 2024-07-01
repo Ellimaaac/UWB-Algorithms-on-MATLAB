@@ -5,6 +5,8 @@
      - [One Way Ranging / Time Difference On Arrival](#one-way-ranging--time-difference-on-arrival)
 2. [Post Processing with real CIR values](#2-post-processing-with-real-cir-values)
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
+     - [UWB Channel Config](#UWB-Channel-Config)
+     - [Results]()
 4. [Data set Creation](#4-dataset-creation)
 5. [References](#5-References)
 
@@ -50,8 +52,26 @@ However, they all have a common structure, which I will describe in detail below
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models (*[matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html)*)
 Voici une explication détaillée de l'exemple : *[uwb-Channel-Models.md link](uwb-Channel-Models.md)*
-Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique. Pour y parvenir, j'ai du utilisé le sofwqre et le forum pour certaines informations précise comme la transmition power. Je vous conseille très fortement de vous rendre sur le forum : ***https://forum.qorvo.com/c/wireless-connectivity/ultra-wideband/5***
+Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique. Pour y parvenir, j'ai du utilisé le sofware et le forum pour certaines informations précise comme la transmition power. Je vous conseille très fortement de vous rendre sur le forum : ***https://forum.qorvo.com/c/wireless-connectivity/ultra-wideband/5***
 
+### UWB Channel Config
+
+```
+  Type              - Environment type ( 'Indoor office', 'Industrial')
+  HasLOS            - Boolean indicating presence of line-of-sight component
+  ChannelNumber     - UWB channel number (0, 1, 2, ... 15)
+  TransmitPower     - Transmit power, in Watts
+  Distance          - Distance between transmitter and receiver in meters
+  MaxDopplerShift   - Maximum Doppler shift (Hz)
+  LastPathThreshold - Minimum power of last path, relative to first path
+  SampleRate        - Input signal sample rate (Hz)
+  SampleDensity     - Number of time samples per half wavelength 
+  ChannelFiltering  - Perform channel filtering (logical)
+
+```
+
+
+### Results
 La  toolbox utilise l'affichage de l'oscilloscope pour afficher les CIRs.
 
 <p align="center"><img src="img/31.png"width="400"</p><h3 align="center">LOS</h3>
