@@ -30,6 +30,7 @@ This first part is based on the *[UWB Localization Using IEEE 802.15.4z](https:/
         35.1141
         45.2217
 ```
+Les resultats ci-dessus ne correspondent pas avec les photos. Dans ce cas, vous aurez une matrice 3x6.
 
 - After that, you will be able to see the TDOA based on hyperbolics intersection of pairs of nodes **for each initiators (devices)**. It takes 3 pairs of nodes (receptors) based on 3 nodes that you can choose and modify
 <p align="center"><img src="img/2.png"width="400"</p>
