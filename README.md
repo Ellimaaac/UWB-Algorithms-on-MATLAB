@@ -20,6 +20,64 @@ This first part is based on the *[UWB Localization Using IEEE 802.15.4z](https:/
 <p align="center"><img src="img/11 - Copy.png"width="400"></p>
 
 - Then you will put your data file for configure the MAC and PHY layers
+```
+     MACFrameConfig properties:
+  
+     FrameType                    - The type of the MAC frame
+     SequenceNumber               - The frame sequence number
+     AcknowledgmentRequest        - Option to request acknowledgment
+     DestinationAddressing        - Destination addressing mode
+     DestinationPANIdentifier     - PAN identifier of destination
+     DestinationAddress           - Destination address
+     SourceAddressing             - Source addressing mode
+     SourcePANIdentifier          - PAN identifier of source
+     SourceAddress                - Source address
+     PANIdentificationCompression - Option to skip source PAN ID from addressing fields
+     FramePending                 - Indication that more frames are imminent
+     FrameVersion                 - Standard compliant frame version
+     BeaconOrder                  - Duration of beacon interval
+     SuperframeOrder              - Length of active superframe portion
+     FinalCAPSlot                 - The last superframe slot of the Contention Access Period
+     BatteryLifeExtension         - Battery life extension
+     PANCoordinator               - Flag indicating beacon transmission by PAN coordinator
+     PermitAssociation            - Flag indicating permissible associations
+     PermitGTS                    - Flag indicating permissible guaranteed time slots (GTS)
+     GTSList                      - Cell array describing guaranteed time slots
+     PendingAddresses             - List of pending short and extended addresses.
+     FFDDevice                    - Flag indicating full function device 
+     BatteryPowered               - Flag indicating lack of power connection
+     IdleReceiving                - Flag indicating receptions during idle periods 
+     AllocateAddress              - Flag indicating address allocation during association 
+     ShortAddress                 - Short addressed assigned during association
+     AssociationStatus            - AssociationStatus
+     DisassociationReason         - Reason for disassociation
+     GTSCharacteristics           - Detailed GTS request
+```
+
+```
+  Physical  lrwpanHRPConfig properties:
+
+   Channel                 - Channel number
+   Mode                    - Operation mode
+   MeanPRF                 - Mean pulse repetition frequency (in MHz)
+   DataRate                - Payload data rate (in Mbps)
+   PHRDataRate             - PHR data rate (in Mbps)
+   SamplesPerPulse         - Number of samples per Butterworth pulse
+   STSPacketConfiguration  - Control STS placement within the packet
+   NumSTSSegments          - Number of STS segments
+   STSSegmentLength        - Length of active STS segments as a multiple of 512 chips
+   ExtraSTSGapLength       - Length of extra STS gap, as a multiple of 4 chips
+   ExtraSTSGapIndex        - Index of extra STS gap value
+   CodeIndex               - Index of used SYNC code from Tables 15-6, 15-7 and 15-7a
+   PreambleMeanPRF         - Mean PRF (pulse repetition frequency) of the preamble (in MHz)
+   PreambleDuration        - Number of repetitions of spread preamble SYNC codes
+   SFDNumber               - Index of Start-of-Frame Delimiter choice
+   Ranging                 - Flag denoting if the PHY frame is for ranging
+   ConstraintLength        - Flag denoting the constraint length of convolutional coding
+   PSDULength              - Length of PHY service data unit (in bytes)
+   SampleRate              - Sample rate of waveform
+```
+
 <p align="center"><img src="img/12.png"width="400"></p>
 
 - Based on your data and your config it will calculates for each blincks, iniators and receptors pairs : **the distance**, **the time of flight** and mostly **the Time Difference On Arrival (TDOA)**. It takes in account the noise and preamble (but you need to configure it).
