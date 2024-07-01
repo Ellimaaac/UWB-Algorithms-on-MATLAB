@@ -4,6 +4,7 @@
 1. [UWB 802.15.4 toolbox Matlab](#1-uwb-localization-using-ieee-802154z)
      - [One Way Ranging / Time Difference On Arrival](#one-way-ranging--time-difference-on-arrival)
 2. [Post Processing with real CIR values](#2-post-processing-with-real-cir-values)
+     - []
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
      - [UWB Channel Config](#UWB-Channel-Config)
      - [Results]()
@@ -100,7 +101,7 @@ Il ne vous restera plus qu'à selectionner le nombre d'itérations pour génére
 
 
 # 4. Dataset creation
-La creation du dataset est basé sur l'index des samples et la magnitude associée. Le code créé un fichier csv contenant : l'index des anchors et tags, le cas LOS ou NLOS (1 ou 0) et la magnitude des samples.
+La creation du dataset est basé sur l'index des samples et la magnitude associée. Le code créé un fichier csv contenant : l'index des anchors et tags, le cas LOS ou NLOS (1 ou 0) et la magnitude des samples (dans cet ordre).
 <p align="center"><img src="img/20.png"width="300"</p>
 
 # 5. References
