@@ -13,14 +13,14 @@
 ### V3:
 1. Lire les valeurs de CIR (Channel Impulse Response) à partir des fichiers et les stocker dans des matrices appropriées.
 2. Calculer la magnitude de la CIR pour chaque signal.
-3. Normaliser la magnitude de la CIR.
+3*. Normaliser la magnitude de la CIR.
 4. Détecter la première trajectoire (First Path) à l'aide d'une méthode appropriée (en utilisant la variance dans ce cas).
 5. Calculer les indices et les distances à partir des résultats obtenus.	
 
 ### V4: Optimisation de V3
 1. Lire les valeurs de CIR (Channel Impulse Response) à partir des fichiers et les stocker dans des matrices appropriées.
 2. Calculer la magnitude de la CIR pour chaque signal.
-3. Normaliser la magnitude de la CIR.
+3*. Normaliser la magnitude de la CIR.
 4. Détecter la première trajectoire (First Path) à l'aide d'une méthode appropriée (en utilisant la variance dans ce cas).
 5. Calculer les indices et les distances à partir des résultats obtenus.	
 
@@ -29,10 +29,10 @@
 Les valeurs de la première trajectoire (ip_f1, ip_f2, ip_f3) sont récupérées et ajustées en fonction de leur représentation en bits fractionnaires.
 1. Lire les valeurs de CIR à partir des fichiers et les stocker.
 2. Calculer la magnitude de la CIR pour chaque signal.
-3. Normaliser la magnitude de la CIR.
+3*. Normaliser la magnitude de la CIR.
 4. Détecter la première trajectoire (First Path).
 5. Calculer et ajuster les valeurs de la première trajectoire en fonction de leur représentation en bits fractionnaires.
 
-
+* : Il se peut que j'ai supprimé la normalisation car ça n'apportait littéralement rien
 
 
