@@ -10,7 +10,7 @@
 
 # 1. UWB Localization Using IEEE 802.15.4z
 ### One Way Ranging / Time Difference On Arrival
-This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://fr.mathworks.com/help/comm/ug/uwb-localization-using-ieee-802.15.4z.html) program gives by matlab.
+This first part is based on the *[UWB Localization Using IEEE 802.15.4z](https://fr.mathworks.com/help/comm/ug/uwb-localization-using-ieee-802.15.4z.html)* program gives by matlab.
 - Firstly, you put in input **an infinte number of anchors and tags**. It will calculates the distance and the time of flight between the initiators and the receptors based on the coordonates.
 <p align="center"><img src="img/11 - Copy.png"width="400"></p>
 
@@ -40,7 +40,7 @@ This first part is based on the [UWB Localization Using IEEE 802.15.4z](https://
 ```
 
 # 2. Post Processing with real CIR values
-The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme (5 versions : [Description](processingCirDataFromMeasurmentsVersions.md)).
+The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme (5 versions : *[Description](processingCirDataFromMeasurmentsVersions.md)*).
 
 However, they all have a common structure, which I will describe in detail below. 
 
@@ -48,9 +48,10 @@ However, they all have a common structure, which I will describe in detail below
 <p align="center"><img src="img/5.png" width="400"></p>
 
 # 3. Theoretical UWB Channel and CIR
-Ce code est basé sur l'exemple de la toolbox : uwb Channel Models ([matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html))
-Voici une explication détaillée de l'exemple : [uwb-Channel-Models.md link](uwb-Channel-Models.md)
-Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique.
+Ce code est basé sur l'exemple de la toolbox : uwb Channel Models (*[matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html)*)
+Voici une explication détaillée de l'exemple : *[uwb-Channel-Models.md link](uwb-Channel-Models.md)*
+Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique. Pour y parvenir, j'ai du utilisé le sofwqre et le forum pour certaines informations précise comme la transmition power. Je vous conseille très fortement de vous rendre sur le forum : ***https://forum.qorvo.com/c/wireless-connectivity/ultra-wideband/5***
+
 La  toolbox utilise l'affichage de l'oscilloscope pour afficher les CIRs.
 
 <p align="center"><img src="img/31.png"width="400"</p>
