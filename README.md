@@ -42,6 +42,8 @@ This first part is based on the *[UWB Localization Using IEEE 802.15.4z](https:/
 ```
      Localization error for device 1:
      Localization error #1 = 0.060 m.
+     Localization error for device 2:
+     Localization error #1 = 0.034 m.
 ```
 
 # 2. Post Processing with real CIR values
