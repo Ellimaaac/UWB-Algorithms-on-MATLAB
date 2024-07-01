@@ -54,13 +54,13 @@ Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle
 
 La  toolbox utilise l'affichage de l'oscilloscope pour afficher les CIRs.
 
-<p align="center"><img src="img/31.png"width="400"</p>
-<p align="center"><img src="img/33.png"width="400"</p>
+<p align="center"><img src="img/31.png"width="400"</p><h3 align="center">LOS</h3>
+<p align="center"><img src="img/33.png"width="400"</p><h3 align="center">NLOS</h3>
 
 Pour vérifier les CIRs, j'ai cherché la variable stockant les magnitudes des samples (pour chaque cluster). Cela m'a permis d'obtenir ces graphes et de configurer le dataset.
      
-<p align="center"><img src="img/32.png"width="400"</p>
-<p align="center"><img src="img/30.png"width="400"</p>
+<p align="center"><img src="img/32.png"width="400"</p><h3 align="center">LOS</h3>
+<p align="center"><img src="img/30.png"width="400"</p><h3 align="center">NLOS</h3>
      
 Une fois cela fait, il ne vous restera plus qu'à selectionner le nombre d'itérations pour générer une multitude de CIR et creer votre dataset.
 
