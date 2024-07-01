@@ -59,7 +59,7 @@ Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle
 ```
   Type              - Environment type ( 'Indoor office', 'Industrial')
   HasLOS            - Boolean indicating presence of line-of-sight component
-  ChannelNumber     - UWB channel number (0, 1, 2, ... 15)
+  ChannelNumber     - UWB channel number (9 or 5)
   TransmitPower     - Transmit power, in Watts
   Distance          - Distance between transmitter and receiver in meters
   MaxDopplerShift   - Maximum Doppler shift (Hz)
@@ -67,7 +67,6 @@ Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle
   SampleRate        - Input signal sample rate (Hz)
   SampleDensity     - Number of time samples per half wavelength 
   ChannelFiltering  - Perform channel filtering (logical)
-
 ```
 
 
