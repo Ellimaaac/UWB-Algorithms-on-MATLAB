@@ -82,9 +82,15 @@ Pour vérifier les CIRs, j'ai cherché la variable stockant les magnitudes des s
 <p align="center"><img src="img/30.png"width="400"</p><h3 align="center">NLOS</h3>
 
 J'aimerai revenir sur la détermination de certains paramètres qui sont, a mon avis, pas correct mais pas dénuer de sens.
+### Questions or Problems or Optimisations
+1. Transmition power : pas beaucoup d'info, vraiment pas la seule que j'ai trouvé est celle-ci : ***https://forum.qorvo.com/t/dwm3001cdk-transmission-range/15141***.
+  
+En ce basant sur la puissance RMS de -41,3 dBm/MHz et en faisant ce petit calcul je trouve : $10^\frac{-41.3}{10} *10^-3 = 74.131 nW/MHz$
 
-1. Transmition power : pas beaucoup d'info, vraiment pas la seule que j'ai trouvé est celle-ci : ***https://forum.qorvo.com/t/dwm3001cdk-transmission-range/15141***. En ce basant sur la puissance RMS de -41,3 dBm/MHz
-et en faisant ce petit calcul je trouve : $10^\frac{-41.3}{10} *10^-3 = 74.131 nW/MHz$
+Puis, nous multiplions la puissance par la fréquence du channel (pour chaque channel).
+
+Dans le code ***FC** (variable stockant la fréquence du channel). 
+
 2. LastPathThreshold : AUCUNE INFO mise à part que cela represente le "Minimum power of last path, relative to first path"
 3. SampleDensity :
 4. MaxDopplerShift :
