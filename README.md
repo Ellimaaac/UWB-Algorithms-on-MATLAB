@@ -66,7 +66,7 @@ J'aimerai revenir sur la détermination de certains paramètres qui sont, a mon 
 
 1. Transmition power : pas beaucoup d'info, vraiment pas la seule que j'ai trouvé est celle-ci : ***https://forum.qorvo.com/t/dwm3001cdk-transmission-range/15141***. En ce basant sur la puissance RMS de -41,3 dBm/MHz
 et en faisant ce petit calcul je trouve : $10^\frac{-41.3}{10} *10^-3 = 74.131 nW/MHz$
-2. LastPathThreshold : AUCUNE INFO mise à part que cela represente le "Minimum power of last path, relative to first path" (d'apres la uwbChannel toolbox):
+2. LastPathThreshold : AUCUNE INFO mise à part que cela represente le "Minimum power of last path, relative to first path"
 3. SampleDensity :
 4. MaxDopplerShift :
 5. ChannelFiltering : 
