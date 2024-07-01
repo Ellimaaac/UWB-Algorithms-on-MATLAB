@@ -45,7 +45,7 @@ The goal here is to be able to analyse the channel impulsive response. As there 
 However, they all have a common structure, which I will describe in detail below. 
 
 <p align="center"><img src="img/4.png" width="400"></p><h3 align="center">Channel Impulsive Response 900 samples in LOS</h3>
-<p align="center"><img src="img/5.png" width="400"></p><h3 align="center">Channel Impulsive Response zoon in the last ≈ 250 samples in LOS</h3>
+<p align="center"><img src="img/5.png" width="400"></p><h3 align="center">Channel Impulsive Response zoom in the last approx. 250 samples in LOS</h3>
 
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models (*[matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html)*)
