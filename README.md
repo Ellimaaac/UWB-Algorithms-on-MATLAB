@@ -4,8 +4,8 @@
 1. [UWB 802.15.4 toolbox Matlab](#1-uwb-localization-using-ieee-802154z)
      - [One Way Ranging / Time Difference On Arrival](#one-way-ranging--time-difference-on-arrival)
 2. [Post Processing with real CIR values](#2-post-processing-with-real-cir-values)
-     - []()
-     - []()
+     - [Channel Impulsive Response (CIR)]()
+     - [Phase response of multipath Components]()
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
      - [UWB Channel Config](#UWB-Channel-Config)
      - [Results]()
@@ -113,6 +113,18 @@ However, they all have a common structure, which I will describe in detail below
 <p align="center"><img src="img/4.png" width="400"></p><h3 align="center">Channel Impulsive Response 900 samples in LOS</h3>
 <p align="center"><img src="img/5.png" width="400"></p><h3 align="center">Channel Impulsive Response zoom in the last approx. 250 samples in LOS</h3>
 
+### Affichage des phases des trajets multipath
+**Composante réelle (In-phase, I) :** représente la partie réelle du gain complexe d'un chemin multipath. En termes simples, c'est la partie du signal qui est en phase avec le signal d'origine.
+
+**Composante imaginaire (Quadrature, Q) :** représente la partie imaginaire du gain complexe d'un chemin multipath.
+
+La dispersion des points sur le graphique montre la distribution des gains multipath complexes. Une forte concentration autour de l'origine (0,0) indique que la plupart des chemins multipath ont des gains relativement faibles.
+
+#### Amplitude et Phase :
+La distance d'un point par rapport à l'origine indique l'amplitude du gain multipath.
+L'angle d'un point par rapport à l'axe réel (horizontal) indique la phase du chemin multipath.
+
+La connaissance précise des valeurs I et Q pour chaque chemin permet de mieux comprendre et modéliser les effets de propagation, ce qui est crucial pour le traitement du signal, l'estimation du canal, et les techniques de démodulation en communication UWB.
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models (*[matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html)*)
 Voici une explication détaillée de l'exemple : *[uwb-Channel-Models.md link](uwb-Channel-Models.md)*
