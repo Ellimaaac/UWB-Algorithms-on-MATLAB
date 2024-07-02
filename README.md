@@ -112,7 +112,7 @@ However, they all have a common structure, which I will describe in detail below
 
 <p align="center"><img src="img/4.png" width="400"></p><h3 align="center">Channel Impulsive Response 900 samples in LOS</h3>
 <p align="center"><img src="img/5.png" width="400"></p><h3 align="center">Channel Impulsive Response zoom in the last approx. 250 samples in LOS</h3>
-<p align="center"><img src="img/21.png" width="400"></p><h3 align="center">Phase response of multipath components</h3>
+<p align="center"><img src="img/23.png" width="400"></p><h3 align="center">Phase response of multipath components</h3>
 
 ### Affichage des phases des trajets multipath
 **Composante réelle (In-phase, I) :** représente la partie réelle du gain complexe d'un chemin multipath. En termes simples, c'est la partie du signal qui est en phase avec le signal d'origine.
