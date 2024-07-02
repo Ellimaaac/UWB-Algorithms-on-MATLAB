@@ -8,7 +8,7 @@
      - [Phase response of multipath Components](#phase-response-of-multipath-components)
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
      - [UWB Channel Config](#UWB-Channel-Config)
-     - [Results]()
+     - [Results](#results)
      - [Questions](#questions-or-problems-or-optimisations)
 4. [Data set Creation](#4-dataset-creation)
 5. [References](#5-References)
@@ -135,7 +135,7 @@ Voici une explication détaillée de l'exemple : *[uwb-Channel-Models.md link](u
 Dans un premier temps, vous devez parametrer votre channel ( dans mon cas, celle de la carte DWM3001CDK) et ces couches Mac et Physique. Pour y parvenir, j'ai du utilisé le sofware et le forum pour certaines informations précise comme la transmition power. 
 
 Je vous conseille très fortement de vous rendre sur le forum : ***https://forum.qorvo.com/c/wireless-connectivity/ultra-wideband/5***
-
+## UWB Channel Config
 ### UWB Channel
 
 ```
