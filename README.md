@@ -9,6 +9,7 @@
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
      - [UWB Channel Config](#UWB-Channel-Config)
      - [Results](#results)
+            - [Comparison of the phase responses in LOS and NLOS](#Comparison-of-the-phase-responses-in-LOS-and-NLOS)
      - [Questions](#questions-or-problems-or-optimisations)
 4. [Data set Creation](#4-dataset-creation)
 5. [References](#5-References)
@@ -238,17 +239,16 @@ La  toolbox utilise l'affichage de l'oscilloscope pour afficher les CIRs.
 <p align="center"><img src="img/31.png"width="400"</p><h3 align="center">LOS</h3>
 <p align="center"><img src="img/33.png"width="400"</p><h3 align="center">NLOS</h3>
 
-Le code d
-
-
 Pour vérifier les CIRs, j'ai cherché la variable stockant les magnitudes des samples (pour chaque cluster). Cela m'a permis d'obtenir ces graphes et de configurer le dataset.
      
 <p align="center"><img src="img/32.png"width="400"</p><h3 align="center">LOS</h3>
 <p align="center"><img src="img/30.png"width="400"</p><h3 align="center">NLOS</h3>
-
-J'aimerai revenir sur la détermination de certains paramètres qui sont, a mon avis, pas correct mais pas dénuer de sens.
+     
+### Comparison of the phase responses in LOS and NLOS
 
 ### Questions or Problems or Optimisations
+J'aimerai revenir sur la détermination de certains paramètres qui sont, a mon avis, pas correct mais pas dénuer de sens.
+
 1. Transmition power : pas beaucoup d'info, vraiment pas,  la seule que j'ai trouvé est celle-ci : ***https://forum.qorvo.com/t/dwm3001cdk-transmission-range/15141***.
   
      En ce basant sur la puissance RMS de -41,3 dBm/MHz et en faisant ce petit calcul je trouve :      $10^\frac{-41.3}{10} *10^-3 = 74.131 nW/MHz$.
