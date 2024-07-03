@@ -9,7 +9,7 @@
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
      - [UWB Channel Config](#UWB-Channel-Config)
      - [Results](#results)
-            - [Comparison of the phase responses in LOS and NLOS](#Comparison-of-the-phase-responses-in-LOS-and-NLOS)
+          - [Comparison of the phase responses in LOS and NLOS](#Comparison-of-the-phase-responses-in-LOS-and-NLOS)
      - [Questions](#questions-or-problems-or-optimisations)
 4. [Data set Creation](#4-dataset-creation)
 5. [References](#5-References)
