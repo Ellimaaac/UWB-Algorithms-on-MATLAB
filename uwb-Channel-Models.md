@@ -269,7 +269,7 @@ pathGains = helperUWBFadingRealization(pathAveragePowers, nakagamiM);
 disp(pathGains);
 Cette fonction simule une réalisation de l'évanouissement Nakagami pour un canal UWB en générant des gains de trajets basés sur les puissances moyennes des trajets et les paramètres Nakagami.
  
-Fonction helperdistancePathLoss
+# Fonction helperdistancePathLoss
 Ce code MATLAB définit une fonction helperDistancePathLoss qui applique une perte de chemin dépendante de la distance à un signal d'entrée. Voici une explication détaillée de cette fonction :
 Description de la fonction
 Inputs
@@ -307,7 +307,7 @@ sigma = 3;  % Écart type de l'ombrage, en dB
 disp(PLd);  % Afficher la perte de chemin causée par la distance
 Cette fonction simule l'effet de la perte de chemin dépendante de la distance sur un signal UWB, en tenant compte de l'ombrage et de la décroissance de la puissance avec la distance.
  
-Fonction helperFreauencyPathLoss
+# Fonction helperFreauencyPathLoss
 Ce code MATLAB définit une fonction helperFrequencyPathLoss qui applique une perte de chemin dépendante de la fréquence à un signal d'entrée. Voici une explication détaillée de cette fonction :
 Description de la fonction
 Inputs
@@ -352,7 +352,7 @@ kappa = 0.5;  % Exposant de perte de chemin spécifique à l'environnement
 disp(PLf);  % Afficher la perte de chemin causée par la fréquence
 Cette fonction simule l'effet de la perte de chemin dépendante de la fréquence sur un signal UWB, en tenant compte de la fréquence centrale et de la largeur de bande du signal. Elle applique un filtre FIR au signal d'entrée pour modéliser les pertes en fonction de la fréquence.
  
-Fonction helperGammaRV
+# Fonction helperGammaRV
 Ce code MATLAB définit une fonction helperGammaRV qui génère une variable aléatoire distribuée selon une loi Gamma en utilisant les paramètres de forme kkk et d'échelle θ\thetaθ. Voici une explication détaillée de la fonction :
 Description de la fonction
 Inputs
@@ -406,15 +406,15 @@ o	La seconde étape utilise la méthode de rejet pour générer une variable al�
 o	La dernière étape combine les deux résultats et les ajuste avec le paramètre d'échelle θ\thetaθ pour obtenir la variable aléatoire Gamma(k, theta).
 Cette fonction utilise des techniques de simulation aléatoire pour générer des variables aléatoires selon une distribution Gamma, en suivant des méthodes bien établies de génération de variables aléatoires.
  
-Fonction helperNakagamiParameters
+# Fonction helperNakagamiParameters
 Ce code MATLAB définit une fonction helperNakagamiParameters qui calcule le paramètre de distribution de Nakagami mmm pour chaque trajet dans un modèle de canal Ultra Wide Band (UWB). Voici une explication détaillée de cette fonction :
-Description de la fonction
-Inputs
+### Description de la fonction
+#### Inputs
 1.	env : Objet de configuration de l'environnement de type uwbChannelConfig contenant les paramètres du modèle de canal.
 2.	pathArrivalTimes : Cellule 1xL contenant les temps d'arrivée des trajets pour chaque cluster. Chaque cellule contient un vecteur 1xK représentant les temps d'arrivée des trajets à l'intérieur du cluster.
 Outputs
 1.	nakagamiM : Cellule 1xL contenant les paramètres de distribution de Nakagami mmm pour chaque trajet. Chaque cellule contient un vecteur 1xK représentant les paramètres Nakagami mmm pour les trajets à l'intérieur du cluster.
-Détails de la fonction
+#### Détails de la fonction
 1.	Initialisation
 o	La fonction commence par déterminer le nombre de clusters LLL à partir de la taille de pathArrivalTimes.
 o	Un tableau nakagamiM est initialisé pour stocker les paramètres Nakagami mmm.
@@ -441,9 +441,9 @@ o	Pour chaque trajet dans un cluster, les paramètres Nakagami mmm sont calculé
         end
     end
 end
-Références
+#### Références
 •	[1] A. F. Molisch et al., "IEEE 802.15.4a Channel Model-Final Report," Tech. Rep., Document IEEE 802.1504-0062-02-004a, 2005
-Exemple d'utilisation
+#### Exemple d'utilisation
 Supposons que vous ayez un objet de configuration env et des temps d'arrivée des trajets pathArrivalTimes définis comme suit :
 env.Type = 'Industrial';
 env.HasLOS = true;
@@ -459,7 +459,7 @@ nakagamiM = helperNakagamiParameters(env, pathArrivalTimes);
 disp(nakagamiM);
 Cette fonction calcule les paramètres de distribution de Nakagami mmm pour chaque trajet dans un modèle de canal UWB, en tenant compte des caractéristiques spécifiques de l'environnement et des temps d'arrivée des trajets.
  
-Fonction helperPathModeling
+# Fonction helperPathModeling
 Ce code MATLAB définit une fonction helperPathModeling qui génère les temps d'arrivée, les puissances moyennes et les phases des trajets pour un modèle de canal Ultra Wide Band (UWB). Voici une explication détaillée de cette fonction :
 Description de la fonction
 Inputs
