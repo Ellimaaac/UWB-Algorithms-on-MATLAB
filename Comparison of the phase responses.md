@@ -13,12 +13,12 @@ To provide a qualitative comparison of the phase responses between the Line Of S
 ### Magnitude of Path Gains:
 - LOS: Smaller variations in path gains, implying a more stable signal environment.
 - NLOS: Larger variations in path gains, indicating a more complex signal environment with significant attenuation and scattering.
-### Suggested Analysis for Qualitative Comparison:
+## Suggested Analysis for Qualitative Comparison:
 ### Calculate and Compare the Mean and Standard Deviation:
 Compute the mean and standard deviation of the magnitudes of the path gains for both LOS and NLOS scenarios. This will provide a numerical representation of the spread and central tendency of the data.
 ### Plot Histograms of Magnitudes:
 Plot histograms of the magnitudes of the path gains for LOS and NLOS to visually compare the distributions.
-# Analyze Cluster Properties:
+### Analyze Cluster Properties:
 Perform clustering analysis (e.g., k-means) on the phase responses to identify distinct clusters and compare the properties (size, centroid, spread) of these clusters between LOS and NLOS.
-# Compare Outliers:
+### Compare Outliers:
 Identify and compare the number of outliers and their distances from the origin for both scenarios.
