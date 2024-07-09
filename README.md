@@ -247,7 +247,7 @@ Pour vérifier les CIRs, j'ai cherché la variable stockant les magnitudes des s
 ### Comparison of the phase responses in LOS and NLOS
 
 ### Questions or Problems or Optimisations
-J'aimerai revenir sur la détermination de certains paramètres qui sont, a mon avis, pas correct mais pas dénuer de sens.
+J'aimerais revenir sur la détermination de certains paramètres qui sont, a mon avis, pas correct mais pas dénuer de sens.
 
 1. Transmition power : pas beaucoup d'info, vraiment pas,  la seule que j'ai trouvé est celle-ci : ***https://forum.qorvo.com/t/dwm3001cdk-transmission-range/15141***.
   
@@ -257,8 +257,8 @@ J'aimerai revenir sur la détermination de certains paramètres qui sont, a mon 
 
 2. LastPathThreshold : AUCUNE INFO mise à part que cela represente le "Minimum power of last path, relative to first path"
 3. SampleDensity :
-4. MaxDopplerShift :
-5. ChannelFiltering : 
+4. MaxDopplerShift : R
+5. ChannelFiltering :  R
 
 
 Il ne vous restera plus qu'à selectionner le nombre d'itérations pour générer une multitude de CIR et creer votre dataset.
