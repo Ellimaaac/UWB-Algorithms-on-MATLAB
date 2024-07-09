@@ -35,4 +35,10 @@ Les valeurs de la première trajectoire (ip_f1, ip_f2, ip_f3) sont récupérées
 
 * : Il se peut que j'ai supprimé la normalisation car ça n'apportait littéralement rien
 
+### V5:
 
+Plot un nombre de CIRs
+
+### V6:
+
+Plot un CIR definit
