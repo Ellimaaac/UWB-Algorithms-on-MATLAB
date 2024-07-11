@@ -145,13 +145,15 @@ L'angle d'un point par rapport à l'axe réel (horizontal) indique la phase du c
 La connaissance précise des valeurs I et Q pour chaque chemin permet de mieux comprendre et modéliser les effets de propagation, ce qui est crucial pour le traitement du signal, l'estimation du canal, et les techniques de démodulation en communication UWB.
 
 ## Comparison of LOS and NLOS phases
-<p align="center"><img src="img/51.png" width="700"></p> <h3 align="center"Superposition of LOS and NLOS
-Phase Responses</h3>
-
+<p align="center"><img src="img/51.png" width="700"></p> <h10 align="center"Superposition of LOS and NLOS
+Phase Responses</h10>
+</p>
+     
 ## Phase response shape in a trigonometric plan
 <p align="center"><img src="img/54.png" width="500"></p> <h3 align="center"Shape of the Phase response in a trigonometric plan in LOS</h3>
 <p align="center"><img src="img/53.png" width="500"></p> <h3 align="center"Shape of the Phase response in a trigonometric plan in NLOS</h3>
-
+</p>
+     
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models (*[matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html)*)
 Voici une explication détaillée de l'exemple : *[uwb-Channel-Models.md link](uwb-Channel-Models.md)*
