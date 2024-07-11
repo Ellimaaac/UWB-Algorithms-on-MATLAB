@@ -117,7 +117,7 @@ This first part is based on the *[UWB Localization Using IEEE 802.15.4z](https:/
 
 # 2. Post Processing with real CIR values
 ## Channel Impulse response 
-The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme (5 versions : *[Description](processingCirDataFromMeasurmentsVersions.md)*).
+The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme (7 versions : *[Description](processingCirDataFromMeasurmentsVersions.md)*).
 
 <p align="center"><img src="img/4.png" width="400"></p><h3 align="center">Channel Impulsive Response 900 samples in LOS</h3>
 <p align="center"><img src="img/5.png" width="400"></p><h3 align="center">Channel Impulsive Response zoom in the last approx. 250 samples in LOS</h3>
