@@ -116,7 +116,7 @@ This first part is based on the *[UWB Localization Using IEEE 802.15.4z](https:/
 ```
 
 # 2. Post Processing with real CIR values
-## Channel Impulse response 
+## Channel Impulse Response 
 The goal here is to be able to analyse the channel impulsive response. As there are several ways of processing the data, several more or less complex versions, there are several versions of the programme (7 versions : *[Description](processingCirDataFromMeasurmentsVersions.md)*).
 
 <p align="center"><img src="img/4.png" width="400"></p><h3 align="center">Channel Impulsive Response 900 samples in LOS</h3>
@@ -128,11 +128,12 @@ The goal here is to be able to analyse the channel impulsive response. As there 
 ## Phase response in a complex plan
 <p align="center"><img src="img/100.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in LOS</h3>
 <p align="center"><img src="img/101.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in NLOS</h3>
-## Phase response shape in a trigonometric plan
 
 ## Comparison of LOS and NLOS phases
+<p align="center"><img src="img/51.png" width="700"></p> <h3 align="center"Superposition of LOS and NLOS
+Phase Responses</h3>
 
-
+## Phase response shape in a trigonometric plan
 
 **Composante réelle (In-phase, I) :** représente la partie réelle du gain complexe d'un chemin multipath. En termes simples, c'est la partie du signal qui est en phase avec le signal d'origine.
 
