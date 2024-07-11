@@ -245,7 +245,7 @@ Pour vérifier les CIRs, j'ai cherché la variable stockant les magnitudes des s
 <p align="center"><img src="img/30.png"width="400"</p><h3 align="center">NLOS</h3>
      
 ### Comparison of the phase responses in LOS and NLOS
-
+### Possible correlation with the position of the antenna
 ### Questions or Problems or Optimisations
 J'aimerais revenir sur la détermination de certains paramètres qui sont, a mon avis, pas correct mais pas dénuer de sens.
 
