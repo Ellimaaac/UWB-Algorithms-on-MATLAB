@@ -7,9 +7,10 @@
      - [Channel Impulsive Response (CIR)](#phase-response-of-multipath-components)
      - [First path algorithm]()
      - [Phase response of multipath Components](#phase-response-of-multipath-components)
-     - [Phase response in a complex plan]()
-     - [Phase response shape in a trigonometric plan]()
-     - [Comparison of LOS and NLOS phases]()
+     - [Phase response in a complex plan](#phase-response-in-a-complex-plan)
+     - [Comparison of LOS and NLOS phases](#comparison-of-los-and-nlos-phases)
+     - [Phase response shape in a trigonometric plan](#phase-response-shape-in-a-trigonometric-plan)
+     
 3. [Theoretical UWB Channel and CIR](#3-theoretical-uwb-channel-and-cir)
      - [UWB Channel Config](#UWB-Channel-Config)
      - [Phase response of multipath Components](#phase-response-of-multipath-components)
