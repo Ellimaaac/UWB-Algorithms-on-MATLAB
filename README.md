@@ -123,11 +123,11 @@ The goal here is to be able to analyse the channel impulsive response. As there 
 <p align="center"><img src="img/5.png" width="400"></p><h3 align="center">Channel Impulsive Response From the 730th sample</h3>
 
 ## Phase response of multipath components
-<p align="center"><img src="img/91.png" width="600"></p><h3 align="center"Phase response - From the 730th sample</h3> </p>
+<p align="center"><img src="img/91.png" width="700"></p><h3 align="center"Phase response - From the 730th sample</h3> </p>
      
 ## Phase response in a complex plan
-<p align="center"><img src="img/23.png" width="400"></p>
-
+<p align="center"><img src="img/100.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in LOS</h3>
+<p align="center"><img src="img/101.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in NLOS</h3>
 ## Phase response shape in a trigonometric plan
 
 ## Comparison of LOS and NLOS phases
