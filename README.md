@@ -128,11 +128,13 @@ The goal here is to be able to analyse the channel impulsive response. As there 
      
 ## Phase response in a complex plan
 <p align="center"><img src="img/100.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in LOS</h3>
-<p align="center"><img src="img/101.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in NLOS</h3>
+<p align="center"><img src="img/101.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in NLOS</h3></p>
 
-**Composante réelle (In-phase, I) :** représente la partie réelle du gain complexe d'un chemin multipath. En termes simples, c'est la partie du signal qui est en phase avec le signal d'origine.
+#### Composante réelle (In-phase, I): 
+représente la partie réelle du gain complexe d'un chemin multipath. En termes simples, c'est la partie du signal qui est en phase avec le signal d'origine.
 
-**Composante imaginaire (Quadrature, Q) :** représente la partie imaginaire du gain complexe d'un chemin multipath.
+#### Composante imaginaire (Quadrature, Q):
+représente la partie imaginaire du gain complexe d'un chemin multipath.
 
 La dispersion des points sur le graphique montre la distribution des gains multipath complexes. Une forte concentration autour de l'origine (0,0) indique que la plupart des chemins multipath ont des gains relativement faibles.
 
@@ -147,8 +149,8 @@ La connaissance précise des valeurs I et Q pour chaque chemin permet de mieux c
 Phase Responses</h3>
 
 ## Phase response shape in a trigonometric plan
-<p align="center"><img src="img/54.png" width="700"></p> <h3 align="center"Shape of the Phase response in a trigonometric plan in LOS</h3>
-<p align="center"><img src="img/54.png" width="700"></p> <h3 align="center"Shape of the Phase response in a trigonometric plan in NLOS</h3>
+<p align="center"><img src="img/54.png" width="500"></p> <h3 align="center"Shape of the Phase response in a trigonometric plan in LOS</h3>
+<p align="center"><img src="img/53.png" width="500"></p> <h3 align="center"Shape of the Phase response in a trigonometric plan in NLOS</h3>
 
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models (*[matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html)*)
