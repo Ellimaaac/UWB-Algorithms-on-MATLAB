@@ -30,39 +30,6 @@ This first part is based on the *[UWB Localization Using IEEE 802.15.4z](https:/
 <p align="center"><img src="img/11 - Copy.png"width="400"></p>
 
 - Then you will put your data file for configure the MAC and PHY layers
-     MACFrameConfig properties:
-  
-     FrameType                    - The type of the MAC frame
-     SequenceNumber               - The frame sequence number
-     AcknowledgmentRequest        - Option to request acknowledgment
-     DestinationAddressing        - Destination addressing mode
-     DestinationPANIdentifier     - PAN identifier of destination
-     DestinationAddress           - Destination address
-     SourceAddressing             - Source addressing mode
-     SourcePANIdentifier          - PAN identifier of source
-     SourceAddress                - Source address
-     PANIdentificationCompression - Option to skip source PAN ID from addressing fields
-     FramePending                 - Indication that more frames are imminent
-     FrameVersion                 - Standard compliant frame version
-     BeaconOrder                  - Duration of beacon interval
-     SuperframeOrder              - Length of active superframe portion
-     FinalCAPSlot                 - The last superframe slot of the Contention Access Period
-     BatteryLifeExtension         - Battery life extension
-     PANCoordinator               - Flag indicating beacon transmission by PAN coordinator
-     PermitAssociation            - Flag indicating permissible associations
-     PermitGTS                    - Flag indicating permissible guaranteed time slots (GTS)
-     GTSList                      - Cell array describing guaranteed time slots
-     PendingAddresses             - List of pending short and extended addresses.
-     FFDDevice                    - Flag indicating full function device 
-     BatteryPowered               - Flag indicating lack of power connection
-     IdleReceiving                - Flag indicating receptions during idle periods 
-     AllocateAddress              - Flag indicating address allocation during association 
-     ShortAddress                 - Short addressed assigned during association
-     AssociationStatus            - AssociationStatus
-     DisassociationReason         - Reason for disassociation
-     GTSCharacteristics           - Detailed GTS request
-
-
 ```
      MACFrameConfig properties:
   
