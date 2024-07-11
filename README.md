@@ -130,12 +130,6 @@ The goal here is to be able to analyse the channel impulsive response. As there 
 <p align="center"><img src="img/100.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in LOS</h3>
 <p align="center"><img src="img/101.png" width="700"></p> <h3 align="center"Phase responses in a complex plan in NLOS</h3>
 
-## Comparison of LOS and NLOS phases
-<p align="center"><img src="img/51.png" width="700"></p> <h3 align="center"Superposition of LOS and NLOS
-Phase Responses</h3>
-
-## Phase response shape in a trigonometric plan
-
 **Composante réelle (In-phase, I) :** représente la partie réelle du gain complexe d'un chemin multipath. En termes simples, c'est la partie du signal qui est en phase avec le signal d'origine.
 
 **Composante imaginaire (Quadrature, Q) :** représente la partie imaginaire du gain complexe d'un chemin multipath.
@@ -147,6 +141,14 @@ La distance d'un point par rapport à l'origine indique l'amplitude du gain mult
 L'angle d'un point par rapport à l'axe réel (horizontal) indique la phase du chemin multipath.
 
 La connaissance précise des valeurs I et Q pour chaque chemin permet de mieux comprendre et modéliser les effets de propagation, ce qui est crucial pour le traitement du signal, l'estimation du canal, et les techniques de démodulation en communication UWB.
+
+## Comparison of LOS and NLOS phases
+<p align="center"><img src="img/51.png" width="700"></p> <h3 align="center"Superposition of LOS and NLOS
+Phase Responses</h3>
+
+## Phase response shape in a trigonometric plan
+<p align="center"><img src="img/54.png" width="700"></p> <h3 align="center"Shape of the Phase response in a trigonometric plan in LOS</h3>
+<p align="center"><img src="img/54.png" width="700"></p> <h3 align="center"Shape of the Phase response in a trigonometric plan in NLOS</h3>
 
 # 3. Theoretical UWB Channel and CIR
 Ce code est basé sur l'exemple de la toolbox : uwb Channel Models (*[matlab link](https://it.mathworks.com/help/comm/ug/uwb-channel-model.html)*)
