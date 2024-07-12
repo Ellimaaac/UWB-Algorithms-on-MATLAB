@@ -14,6 +14,7 @@ Les zones où le gain est minimal, voire nul. Sur le diagramme, ces zones appara
 ### 3. Angles : 
 Les nombres autour du cercle représentent les angles en degrés (°), allant de 0° à 360°. Cela permet de voir comment le gain varie avec la direction de l'antenne.
 
-### 4. Contours de gain : Les contours tracés indiquent des niveaux spécifiques de gain. Les valeurs des niveaux sont souvent indiquées par des lignes de contour étiquetées (par exemple, -10 dBi, -20 dBi, etc.). Ces contours montrent comment le gain diminue à mesure que l'on s'éloigne du lobe principal.
+### 4. Contours de gain : 
+Les contours tracés indiquent des niveaux spécifiques de gain. Les valeurs des niveaux sont souvent indiquées par des lignes de contour étiquetées (par exemple, -10 dBi, -20 dBi, etc.). Ces contours montrent comment le gain diminue à mesure que l'on s'éloigne du lobe principal.
 
 En résumé, ce diagramme polaire est un outil crucial pour visualiser la performance directionnelle d'une antenne. Il permet de comprendre dans quelles directions l'antenne a le plus de gain et dans quelles directions elle est moins efficace.
