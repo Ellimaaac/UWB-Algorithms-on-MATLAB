@@ -407,7 +407,7 @@ o	La dernière étape combine les deux résultats et les ajuste avec le paramèt
 Cette fonction utilise des techniques de simulation aléatoire pour générer des variables aléatoires selon une distribution Gamma, en suivant des méthodes bien établies de génération de variables aléatoires.
  
 # Fonction helperNakagamiParameters
-Ce code MATLAB définit une fonction helperNakagamiParameters qui calcule le paramètre de distribution de Nakagami mmm pour chaque trajet dans un modèle de canal Ultra Wide Band (UWB). Voici une explication détaillée de cette fonction :
+Ce code MATLAB définit une fonction helperNakagamiParameters qui calcule le paramètre de distribution de Nakagami pour chaque trajet dans un modèle de canal Ultra Wide Band (UWB). Voici une explication détaillée de cette fonction :
 ### Description de la fonction
 #### Inputs
 1.	env : Objet de configuration de l'environnement de type uwbChannelConfig contenant les paramètres du modèle de canal.
